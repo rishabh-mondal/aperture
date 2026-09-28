@@ -1,0 +1,134 @@
+{
+  "Cooling Tower": {
+    "home_scale_px": 1024
+  },
+  "Mechanical Draft Cooling Tower": {
+    "home_scale_px": 512
+  },
+  "Boiler Building": {
+    "home_scale_px": 512
+  },
+  "Turbine Hall": {
+    "home_scale_px": 1024
+  },
+  "Coal Stockpile": {
+    "home_scale_px": 1024
+  },
+  "Coal Conveyor": {
+    "home_scale_px": 1024
+  },
+  "Switchyard": {
+    "home_scale_px": 1024
+  },
+  "Ash Pond": {
+    "home_scale_px": 2048
+  },
+  "Chimney Stack": {
+    "home_scale_px": 512
+  },
+  "Cooling Water Reservoir": {
+    "home_scale_px": 4096
+  },
+  "Circular Clarifier": {
+    "home_scale_px": 256
+  },
+  "Aeration Basin": {
+    "home_scale_px": 512
+  },
+  "Sludge Digester": {
+    "home_scale_px": 256
+  },
+  "Sludge Drying Bed": {
+    "home_scale_px": 512
+  },
+  "Rectangular Sedimentation Tank": {
+    "home_scale_px": 256
+  },
+  "Treatment Train Layout": {
+    "home_scale_px": 4096
+  },
+  "Chlorination Contact Basin": {
+    "home_scale_px": 512
+  },
+  "Distillation Column": {
+    "home_scale_px": 512
+  },
+  "Crude Oil Storage Tank": {
+    "home_scale_px": 256
+  },
+  "LPG Sphere": {
+    "home_scale_px": 256
+  },
+  "Tank Farm": {
+    "home_scale_px": 2048
+  },
+  "Flare Stack": {
+    "home_scale_px": 512
+  },
+  "Process Unit Piping": {
+    "home_scale_px": 512
+  },
+  "Marine Loading Jetty": {
+    "home_scale_px": 1024
+  },
+  "Reactor Containment Dome": {
+    "home_scale_px": 256
+  },
+  "Reactor-Turbine Block Pair": {
+    "home_scale_px": 1024
+  },
+  "Nuclear Site Layout": {
+    "home_scale_px": 4096
+  },
+  "Nuclear Cooling Intake Structure": {
+    "home_scale_px": 512
+  },
+  "LNG Storage Tank": {
+    "home_scale_px": 512
+  },
+  "Liquefaction Train": {
+    "home_scale_px": 1024
+  },
+  "LNG Carrier Berth": {
+    "home_scale_px": 1024
+  },
+  "Cryogenic Pipe Rack": {
+    "home_scale_px": 1024
+  },
+  "Regasification Unit": {
+    "home_scale_px": 1024
+  },
+  "Blast Furnace": {
+    "home_scale_px": 512
+  },
+  "Coke Oven Battery": {
+    "home_scale_px": 1024
+  },
+  "Rolling Mill": {
+    "home_scale_px": 2048
+  },
+  "Iron Ore Stockpile": {
+    "home_scale_px": 1024
+  },
+  "Slag Dump": {
+    "home_scale_px": 2048
+  },
+  "Gas Holder": {
+    "home_scale_px": 256
+  },
+  "Sinter Plant": {
+    "home_scale_px": 1024
+  },
+  "Continuous Casting Building": {
+    "home_scale_px": 1024
+  },
+  "Scrap Metal Yard": {
+    "home_scale_px": 1024
+  },
+  "Railway Siding": {
+    "home_scale_px": 1024
+  },
+  "Pipe Rack": {
+    "home_scale_px": 1024
+  }
+}
