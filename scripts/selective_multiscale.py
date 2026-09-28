@@ -35,6 +35,7 @@ MODEL_IDS = {
     "glm": "zai-org/GLM-4.6V",
 }
 TEMPERATURES = (30,)  # Fixed yes/no concept-score temperature (paper: tau = 30).
+ALPHA_HOME = 0.25  # Paper's home-scale contribution to each concept probability.
 PREP_SIZE = 224
 LEVELS = (4096, 2048, 1024, 512)
 YES_SURFACES = ("yes", "Yes", " yes", " Yes")
@@ -570,7 +571,8 @@ def read_shard(path: Path, site: Site, entries: dict[str, dict],
 
 
 def class_scores(dataset: str, entries: dict[str, dict],
-                 evidence: dict[str, dict], temperature: int) -> dict[str, float]:
+                 evidence: dict[str, dict], temperature: int,
+                 home_evidence: dict[str, dict] | None = None) -> dict[str, float]:
     selected = selected_entries(dataset, entries)
     scores = {}
     for _, cls, _, _ in CLASSES[dataset]:
@@ -578,8 +580,14 @@ def class_scores(dataset: str, entries: dict[str, dict],
                  for key, row in selected.items() if row["class"] == cls]
         if not terms:
             raise ValueError(f"No selected concepts for {cls}")
-        scores[cls] = sum(score_at_temperature(evidence[key], temperature) * weight
-                          for key, weight in terms) / sum(weight for _, weight in terms)
+        total = 0.0
+        for key, weight in terms:
+            concept_score = score_at_temperature(evidence[key], temperature)
+            if home_evidence is not None:
+                home_score = score_at_temperature(home_evidence[key], temperature)
+                concept_score = (1 - ALPHA_HOME) * concept_score + ALPHA_HOME * home_score
+            total += concept_score * weight
+        scores[cls] = total / sum(weight for _, weight in terms)
     return scores
 
 
@@ -593,22 +601,26 @@ def prediction_rows(sites: list[Site], shards: dict[str, dict],
         if shard is None:
             continue
         entries = descriptions[site.country]
-        for method, evidence in (("global_mean", shard["global"]),
-                                 ("selective_home_mean", shard["home"])):
-            for temperature in TEMPERATURES:
-                scores = class_scores(dataset, entries, evidence, temperature)
+        for temperature in TEMPERATURES:
+            for method, evidence, home_evidence, alpha_home in (
+                ("global_mean", shard["global"], None, 0.0),
+                ("selective_home_mean", shard["home"], None, 1.0),
+                ("aperture_blend", shard["global"], shard["home"], ALPHA_HOME),
+            ):
+                scores = class_scores(dataset, entries, evidence, temperature, home_evidence)
                 best = max(scores, key=scores.get)
                 rows.append({"image_file": site.filename, "country": site.country,
                              "true": site.label, "method": method,
-                             "temperature": temperature, "pred": class_to_label[best],
+                             "temperature": temperature, "alpha_home": alpha_home,
+                             "pred": class_to_label[best],
                              "model": model_id,
                              **{f"score_{cls}": f"{value:.8f}" for cls, value in scores.items()}})
     return rows
 
 
 def write_predictions(path: Path, rows: list[dict], dataset: str) -> None:
-    columns = ["image_file", "country", "true", "method", "temperature", "pred", "model",
-               *(f"score_{item[1]}" for item in CLASSES[dataset])]
+    columns = ["image_file", "country", "true", "method", "temperature", "alpha_home",
+               "pred", "model", *(f"score_{item[1]}" for item in CLASSES[dataset])]
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(".csv.tmp")
     with temporary.open("w", newline="", encoding="utf-8") as handle:
