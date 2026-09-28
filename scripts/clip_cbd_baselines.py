@@ -97,8 +97,11 @@ def load_descriptions(dataset: str, path: Path) -> tuple[list[str], list[str], l
     return names, prompts, owners, ordinals
 
 
-def output_paths(dataset: str, output_dir: Path, limit: int | None) -> dict[str, Path]:
-    stem = f"{dataset}_clip_cbd_vitl14" + (f"_smoke{limit}" if limit is not None else "")
+def output_paths(dataset: str, output_dir: Path, limit: int | None,
+                 model_id: str, year: int) -> dict[str, Path]:
+    model_tag = ("vitl14" if model_id == MODEL_ID else
+                 "custom_" + hashlib.sha256(model_id.encode("utf-8")).hexdigest()[:10])
+    stem = f"{dataset}_clip_cbd_{model_tag}_{year}" + (f"_smoke{limit}" if limit is not None else "")
     return {key: output_dir / f"{stem}_{key}.{extension}" for key, extension in
             (("predictions", "csv"), ("descriptor_scores", "csv"),
              ("summary", "csv"), ("run", "json"))}
@@ -227,6 +230,8 @@ def main() -> None:
         raise ValueError("--limit must be positive")
     if args.batch_size < 1 or args.text_batch_size < 1:
         raise ValueError("batch sizes must be positive")
+    if Path(args.model_id).is_absolute():
+        raise ValueError("--model-id must be a checkpoint identifier, not a local path")
     csv_path = args.csv or CSV_PATHS[args.dataset]
     descriptor_path = args.descriptors or DESCRIPTOR_FILES[args.dataset]
     sites = read_sites(csv_path, args.images, args.year, args.dataset)
@@ -237,7 +242,7 @@ def main() -> None:
     names, prompts, owners, ordinals = load_descriptions(args.dataset, descriptor_path)
     selected = sites[:args.limit]
     missing = [site.filename for site in selected if not site.path.is_file()]
-    paths = output_paths(args.dataset, args.output_dir, args.limit)
+    paths = output_paths(args.dataset, args.output_dir, args.limit, args.model_id, args.year)
     print(f"dataset={args.dataset} sites={len(sites)} selected={len(selected)} "
           f"descriptions={len(prompts)} missing_images={len(missing)}")
     print(f"model={args.model_id} outputs={paths['predictions'].name}, {paths['summary'].name}")
@@ -265,7 +270,7 @@ def main() -> None:
               ["dataset", "model", "method", "metric", *COUNTRIES[args.dataset],
                "ALL", "n_images"], summary)
     metadata = {
-        "dataset": args.dataset, "model_id": args.model_id, "device": device,
+        "dataset": args.dataset, "year": args.year, "model_id": args.model_id, "device": device,
         "n_images": len(selected), "n_classes": len(classes), "n_descriptions": len(prompts),
         "site_csv_sha256": sha256_file(csv_path),
         "descriptors_sha256": sha256_file(descriptor_path),

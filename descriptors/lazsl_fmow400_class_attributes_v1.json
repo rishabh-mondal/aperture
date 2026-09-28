@@ -1,0 +1,84 @@
+{
+  "name": "lazsl_fmow400_class_attributes_v1",
+  "method": "LaZSL",
+  "source": "Frozen class-only visual attributes reused from menon_vondrick_fmow5_class_descriptions_v1.json so that the global-description and local-alignment baselines differ only in visual aggregation.",
+  "image_or_label_use": "No evaluation image, country, coordinate, or evaluation label was used to select these attributes.",
+  "prompt_pattern": "{class_name}, which has {attribute}",
+  "classes": {
+    "shipyard": {
+      "class_name": "shipyard",
+      "attributes": [
+        "long dry docks beside water",
+        "large ships at shore berths",
+        "gantry cranes over slipways",
+        "rectangular graving docks",
+        "parallel shipbuilding halls",
+        "launch ramps entering water",
+        "quays with large vessels",
+        "ship hulls under construction",
+        "rail-mounted waterfront cranes",
+        "industrial basins along shorelines"
+      ]
+    },
+    "solar_farm": {
+      "class_name": "solar farm",
+      "attributes": [
+        "grids of rectangular panels",
+        "parallel solar array rows",
+        "repeated dark panel blocks",
+        "service lanes between panel rows",
+        "rectangular arrays on open ground",
+        "tilted panels with short shadows",
+        "regular panel stripes across fields",
+        "inverter cabins among arrays",
+        "fenced photovoltaic fields",
+        "rectilinear solar panel clusters"
+      ]
+    },
+    "storage_tank": {
+      "class_name": "storage tank facility",
+      "attributes": [
+        "clusters of circular tanks",
+        "large round tank roofs",
+        "berms around storage tanks",
+        "rows of cylindrical tanks",
+        "roads between tank clusters",
+        "pipe corridors joining tanks",
+        "repeated circular tank tops",
+        "tank farms beside loading areas",
+        "widely spaced industrial tanks",
+        "raised circular tank rims"
+      ]
+    },
+    "water_treatment_facility": {
+      "class_name": "water treatment facility",
+      "attributes": [
+        "circular clarifier basins",
+        "rectangular aeration basins",
+        "open water-treatment tanks",
+        "central bridges across clarifiers",
+        "channels connecting basin rows",
+        "parallel sedimentation basins",
+        "basins beside pump buildings",
+        "filter beds in rectangular grids",
+        "round and rectangular basins",
+        "service roads between basins"
+      ]
+    },
+    "wind_farm": {
+      "class_name": "wind farm",
+      "attributes": [
+        "wind turbines with long shadows",
+        "tall turbine towers in rows",
+        "three-bladed rotor shadows",
+        "spaced turbines across fields",
+        "access roads to turbine pads",
+        "circular turbine foundations",
+        "repeated rotor discs and shadows",
+        "turbines along ridgelines",
+        "widely separated turbine positions",
+        "small pads beneath turbine towers"
+      ]
+    }
+  }
+}

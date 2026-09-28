@@ -1,0 +1,82 @@
+{
+  "name": "fmow5_class_only_short_descriptions_v1",
+  "provenance": "Independent class-name-only visual descriptions drafted for a Menon-Vondrick method adaptation. Not the paper's original GPT-3 outputs; no evaluation images or labels were used to select these descriptions.",
+  "description_prompt_pattern": "{class_name} which has {descriptor}",
+  "classes": {
+    "shipyard": {
+      "class_name": "shipyard",
+      "descriptors": [
+        "long dry docks beside water",
+        "large ships at shore berths",
+        "gantry cranes over slipways",
+        "rectangular graving docks",
+        "parallel shipbuilding halls",
+        "launch ramps entering water",
+        "quays with large vessels",
+        "ship hulls under construction",
+        "rail-mounted waterfront cranes",
+        "industrial basins along shorelines"
+      ]
+    },
+    "solar_farm": {
+      "class_name": "solar farm",
+      "descriptors": [
+        "grids of rectangular panels",
+        "parallel solar array rows",
+        "repeated dark panel blocks",
+        "service lanes between panel rows",
+        "rectangular arrays on open ground",
+        "tilted panels with short shadows",
+        "regular panel stripes across fields",
+        "inverter cabins among arrays",
+        "fenced photovoltaic fields",
+        "rectilinear solar panel clusters"
+      ]
+    },
+    "storage_tank": {
+      "class_name": "storage tank facility",
+      "descriptors": [
+        "clusters of circular tanks",
+        "large round tank roofs",
+        "berms around storage tanks",
+        "rows of cylindrical tanks",
+        "roads between tank clusters",
+        "pipe corridors joining tanks",
+        "repeated circular tank tops",
+        "tank farms beside loading areas",
+        "widely spaced industrial tanks",
+        "raised circular tank rims"
+      ]
+    },
+    "water_treatment_facility": {
+      "class_name": "water treatment facility",
+      "descriptors": [
+        "circular clarifier basins",
+        "rectangular aeration basins",
+        "open water-treatment tanks",
+        "central bridges across clarifiers",
+        "channels connecting basin rows",
+        "parallel sedimentation basins",
+        "basins beside pump buildings",
+        "filter beds in rectangular grids",
+        "round and rectangular basins",
+        "service roads between basins"
+      ]
+    },
+    "wind_farm": {
+      "class_name": "wind farm",
+      "descriptors": [
+        "wind turbines with long shadows",
+        "tall turbine towers in rows",
+        "three-bladed rotor shadows",
+        "spaced turbines across fields",
+        "access roads to turbine pads",
+        "circular turbine foundations",
+        "repeated rotor discs and shadows",
+        "turbines along ridgelines",
+        "widely separated turbine positions",
+        "small pads beneath turbine towers"
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "name": "facility6_class_only_llm_descriptions_v1",
+  "provenance": "Independent class-name-only descriptions drafted by the assistant for this adaptation of Menon and Vondrick (ICLR 2023). These are not the original paper's GPT-3 outputs, and no evaluation images or labels were used to select them.",
+  "source_paper": "Visual Classification via Description from Large Language Models (Menon and Vondrick, ICLR 2023)",
+  "description_prompt_pattern": "{class_name} which has {descriptor}",
+  "classes": {
+    "iron_still_plant": {
+      "class_name": "iron and steel plant",
+      "descriptors": [
+        "furnace towers and hot-blast stoves",
+        "inclined ducts beside furnace towers",
+        "parallel rolling-mill roofs",
+        "ore stockpiles linked by conveyors",
+        "rail sidings beside process halls",
+        "casting halls near furnace clusters",
+        "tall chimneys above steelworks",
+        "slag yards beside furnaces",
+        "gas holders near process halls",
+        "large steelmaking sheds"
+      ]
+    },
+    "lng_terminals": {
+      "class_name": "LNG terminal",
+      "descriptors": [
+        "large cylindrical tank clusters",
+        "coastal storage tanks",
+        "marine loading jetties",
+        "berths connected to tank farms",
+        "shore-to-tank pipe corridors",
+        "widely spaced insulated tanks",
+        "tanker loading arms",
+        "large circular tank roofs",
+        "waterfront transfer pipes",
+        "processing units near tanks"
+      ]
+    },
+    "nuclear_plants": {
+      "class_name": "nuclear power plant",
+      "descriptors": [
+        "domed reactor containment buildings",
+        "containment domes beside turbine halls",
+        "repeated reactor-turbine units",
+        "cooling towers beside containment domes",
+        "switchyards linked to reactor buildings",
+        "large cooling-water intakes",
+        "secured reactor compounds",
+        "parallel turbine halls",
+        "waterfront cooling infrastructure",
+        "compact domes near long halls"
+      ]
+    },
+    "oil_refineries": {
+      "class_name": "oil refinery",
+      "descriptors": [
+        "distillation column clusters",
+        "tank farms beside process towers",
+        "pipe racks linking processing blocks",
+        "bermed circular storage tanks",
+        "flare stacks beyond process units",
+        "rectangular processing blocks",
+        "rail loading beside tank farms",
+        "tall narrow refining towers",
+        "dense pipes between tanks and towers",
+        "heat-exchanger rows near pipe racks"
+      ]
+    },
+    "power_plants": {
+      "class_name": "coal or thermal power plant",
+      "descriptors": [
+        "boiler and turbine halls",
+        "smokestacks beside boiler buildings",
+        "coal yards linked by conveyors",
+        "cooling towers beside turbine halls",
+        "switchyards beside generating halls",
+        "rail unloading beside coal yards",
+        "ash disposal yards",
+        "enclosed coal conveyors",
+        "large rectangular turbine halls",
+        "water intakes near cooling towers"
+      ]
+    },
+    "stp_plants": {
+      "class_name": "sewage treatment plant",
+      "descriptors": [
+        "circular clarifiers with central bridges",
+        "parallel rectangular aeration basins",
+        "channels linking treatment basins",
+        "circular and rectangular basins",
+        "repeated open settling tanks",
+        "sludge digesters beside clarifiers",
+        "inlet channels near basin arrays",
+        "pump buildings beside clarifiers",
+        "gridded sedimentation basins",
+        "service roads between basins"
+      ]
+    }
+  }
+}

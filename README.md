@@ -34,6 +34,13 @@ available at https://anonymous.4open.science/r/aperture-C1984/.
 | `descriptors/cccd_descriptors.json` | 339 country–class–concept entries for SiFC |
 | `descriptors/fmow_cccd_descriptors.json` | 75 country–class–concept entries for fMoW |
 | `descriptors/final_inference_prompts.json` | Global, routing, and home questions for SiFC |
+| `descriptors/menon_vondrick_facility6_class_descriptions_v1.json` | SiFC CbD descriptions |
+| `descriptors/menon_vondrick_fmow5_class_descriptions_v1.json` | fMoW CbD descriptions |
+| `descriptors/lazsl_sifc800_class_attributes_v1.json` | SiFC LaZSL attributes |
+| `descriptors/lazsl_fmow400_class_attributes_v1.json` | fMoW LaZSL attributes |
+| `metadata/lazsl_crop_seeds.csv` | Source-matched numeric crop seeds, without image IDs |
+| `descriptors/labo_{sifc,fmow}_candidate_pool.json` | LaBo-style class candidate phrases |
+| `metadata/labo_{sifc,fmow}_loco_splits.csv` | Anonymous source train/validation/test folds |
 
 ## Run from the repository root
 
@@ -55,6 +62,48 @@ python scripts/selective_multiscale.py --dataset sifc --model gemma --images dow
 Both runners also accept `--dataset fmow --images downloaded_images/fmow`. Choose `gemma`, `gemini`, `qwen`, or `glm` with `--model`. Remove `--dry-run` to infer; `--limit 1` is a small first run. The download `--year` and inference `--year` must agree. Local models use vLLM; Gemini needs `google-genai`, `pydantic`, and `GEMINI_API_KEY`.
 
 APERTURE uses the paper's fixed concept temperature **τ = 30** and blends each concept's global and home probabilities as **0.75 × global + 0.25 × home**. It then averages concept scores per class (weighted by the saved shared-concept weights for fMoW). The selective output also reports global-only and home-only comparisons. SiFC uses assigned pixel widths; fMoW uses a provisional quarter-image home window with 10% padding.
+
+## CLIP and CbD baselines
+
+One runner scores class-name CLIP and description-based CbD on either dataset:
+
+```bash
+python scripts/clip_cbd_baselines.py --dataset sifc --images downloaded_images/sifc --dry-run
+python scripts/clip_cbd_baselines.py --dataset fmow --images downloaded_images/fmow --dry-run
+```
+
+The frozen CLIP ViT-L/14 checkpoint needs PyTorch, Transformers, and Pillow. It must be cached unless `--allow-download` is set. Remove `--dry-run` to score images; outputs go to `results/clip_cbd/`. The included CbD descriptions are an independent method adaptation, not the original GPT-3 descriptions.
+
+## LaZSL baseline
+
+The shared runner uses frozen CLIP ViT-L/14, 70 deterministic random crops per image, and Sinkhorn attribute alignment:
+
+```bash
+python scripts/lazsl_baseline.py --dataset sifc --images downloaded_images/sifc --dry-run
+python scripts/lazsl_baseline.py --dataset fmow --images downloaded_images/fmow --dry-run
+```
+
+Remove `--dry-run` after downloading imagery. `--shard INDEX/COUNT` splits inference; `--merge-only --shard-count COUNT` combines complete shards. The checkpoint must be cached unless `--allow-download` is set. Outputs go to `results/lazsl/`.
+
+## LaBo-style baseline
+
+The shared runner selects 50 concepts per class from the included Qwen-generated pools, fits a class-concept head on source-country training sites, and reports each held-out country. This adapts [LaBo](https://github.com/YueYANG1996/LaBo); the concept pool and greedy selector differ from the authors' GPT-3/T5 and modified Apricot setup.
+
+```bash
+python scripts/labo_baseline.py --dataset sifc --stage audit --images downloaded_images/sifc
+python scripts/labo_baseline.py --dataset fmow --stage audit --images downloaded_images/fmow
+python scripts/labo_baseline.py --dataset sifc --stage smoke
+for dataset in sifc fmow; do
+  python scripts/labo_baseline.py --dataset "$dataset" --images "downloaded_images/$dataset" --stage embed --disable-cudnn
+  if [ "$dataset" = sifc ]; then countries="China India USA"; else countries="France Russia USA"; fi
+  for country in $countries; do
+    python scripts/labo_baseline.py --dataset "$dataset" --images "downloaded_images/$dataset" --stage fold --heldout-country "$country"
+  done
+  python scripts/labo_baseline.py --dataset "$dataset" --images "downloaded_images/$dataset" --stage merge
+done
+```
+
+The 224-pixel whole-image CLIP ViT-L/14 checkpoint must be cached unless `--allow-download` is set. The runner needs NumPy, Pillow, PyTorch, Transformers, SciPy, and scikit-learn. Its predictions and metrics go to `results/labo/`; `--image-shard R/N` can split embedding across workers.
 
 ## SiFC part removal
 
