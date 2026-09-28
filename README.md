@@ -21,6 +21,14 @@ The default Wayback year is 2026. Use `--year`, `--zoom`, `--crop-size`, or
 subsequent runs, and `download_report.csv` records the status of each CSV row.
 Downloaded imagery stays in the ignored `downloaded_images/` directory.
 
+The same downloader accepts the fMoW site list through `--csv`. Keep the two
+image sets in separate directories:
+
+```bash
+python scripts/download_arcgis_images.py --csv "SiFC data/sifc_dataset.csv" --output downloaded_images/sifc
+python scripts/download_arcgis_images.py --csv "fMoW data/fmow_dataset.csv" --output downloaded_images/fmow
+```
+
 ## General concept descriptors (GCD)
 
 `descriptors/gcd_descriptors.json` contains the 44 structured general concept
@@ -66,3 +74,63 @@ routing, and home-scale yes/no verification. Each of its 339
 by source crop width and stop before the assigned home scale. The questions
 are copied from the corresponding CCCD entries, including the distinct home
 wording for object- and tile-level concepts.
+
+## Zero-shot baselines
+
+`scripts/zero_shot_baselines.py` runs the original 224 × 224 pixel,
+letter-choice baseline prompt for either dataset with `--dataset sifc` or
+`--dataset fmow`. Select `--model gemma`, `gemini`, `qwen`, or `glm`. The SiFC
+prompt has six choices; the fMoW prompt has five. GLM uses the Qwen-style
+first-token scoring path with its saved boxed-answer prefix. The script reads
+coordinate/year PNG filenames from the downloader, so `--year` must match the
+download year. It does not use the CSV label to construct the prompt.
+
+Check inputs without loading a model or making API calls:
+
+```bash
+python scripts/zero_shot_baselines.py --dataset sifc --model gemma --images downloaded_images/sifc --dry-run --show-prompt
+python scripts/zero_shot_baselines.py --dataset fmow --model glm --images downloaded_images/fmow --dry-run --show-prompt
+```
+
+Remove `--dry-run` to infer. Gemma, Qwen, and GLM require Pillow and vLLM with
+the respective model available. GLM can use `--gpus 0,1,2,3 --tensor-parallel-size 4`. Gemini requires Pillow, `google-genai`, `pydantic`,
+and `GEMINI_API_KEY` in the environment. Gemini returns one selected class;
+local models also record normalized answer-letter scores. Predictions resume
+from `results/<dataset>_<model>_predictions.csv`, with one row per image. Use
+`--limit` for a small run and `--model-id` to override a default model ID.
+No previous prediction files are reused.
+
+## Selective multiscale inference
+
+`scripts/selective_multiscale.py` runs the country-selected concept search with
+`--dataset sifc` or `--dataset fmow` and `--model gemma`, `gemini`, `qwen`, or
+`glm`. It scores all global questions fresh, routes each selected concept by
+top-1 quadrant choice on an image with a numbered grid, and verifies the home
+crop from the original image without the grid. A global “no” does not stop
+routing. Saved site evidence resumes safely, and predictions use the fixed
+yes/no concept-score temperature τ = 30 for both datasets and all four models.
+Results are written under the ignored `results/selective/`. Quadrant ranking
+uses a separate routing temperature (default 1); model answer generation uses
+its own decoding settings.
+
+SiFC uses the 339-entry `descriptors/cccd_descriptors.json`, 100 selected
+class–concept pairs per country, and the saved concept-specific home widths.
+The 4096-pixel home questions reuse same-run global evidence. fMoW uses the
+75-entry `descriptors/fmow_cccd_descriptors.json`, 25 pairs per country, and
+a relative home window at one quarter of each image dimension with 10% context
+padding. Its home width is provisional; the fMoW descriptors do not define a
+calibrated pixel width. fMoW class scores use the saved shared-concept weights.
+
+```bash
+python scripts/selective_multiscale.py --dataset sifc --model gemma --images downloaded_images/sifc --dry-run
+python scripts/selective_multiscale.py --dataset fmow --model glm --images downloaded_images/fmow --dry-run
+```
+
+Remove `--dry-run` to run inference. `--limit 1` processes one pending image;
+`--gpus` and `--tensor-parallel-size` configure local vLLM models.
+Qwen and GLM default to one model spread across four GPUs; Gemma defaults to
+one GPU. The selective Qwen model is Qwen3.5-122B-A10B, matching its source
+runner. SiFC Gemini uses answer-token log probabilities; fMoW Gemini uses a
+structured quadrant ranking and self-reported presence confidence, matching
+its separate source protocol. Gemini calls require `GEMINI_API_KEY` and use
+the standard API.
