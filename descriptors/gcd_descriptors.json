@@ -1,0 +1,498 @@
+{
+  "Cooling Tower": {
+    "concept": "Cooling Tower",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "nuclear_plants",
+      "oil_refineries",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as large circular or rectangular structures ranging from 10 to over 100 meters in size, cooling towers are typically gray or white with dark central openings or visible fan arrays on top, casting distinct, often hyperbolic or tall boxy shadows.",
+    "confusers": "They are most often mistaken for storage tanks, large smokestacks, or silos, but can be distinguished by their open tops, visible fan arrays, or the active emission of thick white steam plumes.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a cooling tower visible in it? Appearing as large circular or rectangular structures ranging from 10 to over 100 meters in size, cooling towers are typically gray or white with dark central openings or visible fan arrays on top, casting distinct, often hyperbolic or tall boxy shadows. Do not confuse with: They are most often mistaken for storage tanks, large smokestacks, or silos, but can be distinguished by their open tops, visible fan arrays, or the active emission of thick white steam plumes. Answer with exactly one word: yes or no."
+  },
+  "Mechanical Draft Cooling Tower": {
+    "concept": "Mechanical Draft Cooling Tower",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "nuclear_plants",
+      "oil_refineries",
+      "lng_terminals",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as rectangular banks of square cells ranging from 10 to over 50 meters in length, they are typically gray or white structures with large circular fan openings on their flat roofs, casting boxy shadows that are frequently obscured by active steam plumes.",
+    "confusers": "They are most often mistaken for large building HVAC units, flat-roofed warehouses, or rectangular storage tanks, but can be distinguished by the prominent row of large circular fan shrouds on their roofs and the frequent presence of thick white vapor plumes.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a mechanical draft cooling tower visible in it? Appearing as rectangular banks of square cells ranging from 10 to over 50 meters in length, they are typically gray or white structures with large circular fan openings on their flat roofs, casting boxy shadows that are frequently obscured by active steam plumes. Do not confuse with: They are most often mistaken for large building HVAC units, flat-roofed warehouses, or rectangular storage tanks, but can be distinguished by the prominent row of large circular fan shrouds on their roofs and the frequent presence of thick white vapor plumes. Answer with exactly one word: yes or no."
+  },
+  "Boiler Building": {
+    "concept": "Boiler Building",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "iron_still_plant"
+    ],
+    "appearance": "A boiler building typically appears as a tall, rectangular or multi-tiered structure measuring 20 to 50 meters across, featuring industrial gray or metallic roofing and casting a long, prominent shadow due to its significant height.",
+    "confusers": "It is most often mistaken for turbine buildings, large warehouses, or incinerator blocks, but can be distinguished by the presence of massive exhaust stacks, external piping networks, and fuel feed conveyors directly attached to its structure.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a boiler building visible in it? A boiler building typically appears as a tall, rectangular or multi-tiered structure measuring 20 to 50 meters across, featuring industrial gray or metallic roofing and casting a long, prominent shadow due to its significant height. Do not confuse with: It is most often mistaken for turbine buildings, large warehouses, or incinerator blocks, but can be distinguished by the presence of massive exhaust stacks, external piping networks, and fuel feed conveyors directly attached to its structure. Answer with exactly one word: yes or no."
+  },
+  "Turbine Hall": {
+    "concept": "Turbine Hall",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "nuclear_plants"
+    ],
+    "appearance": "The turbine hall appears as a massive, elongated rectangular building, typically 50 to 150 meters in length, featuring a flat or slightly pitched roof in dull gray or white tones that casts a prominent, sharp rectangular shadow.",
+    "confusers": "It is most often mistaken for large commercial warehouses or general manufacturing buildings, but can be distinguished by its direct structural integration with boiler houses or reactor buildings and the immediate proximity of high-voltage transformer yards.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a turbine hall visible in it? The turbine hall appears as a massive, elongated rectangular building, typically 50 to 150 meters in length, featuring a flat or slightly pitched roof in dull gray or white tones that casts a prominent, sharp rectangular shadow. Do not confuse with: It is most often mistaken for large commercial warehouses or general manufacturing buildings, but can be distinguished by its direct structural integration with boiler houses or reactor buildings and the immediate proximity of high-voltage transformer yards. Answer with exactly one word: yes or no."
+  },
+  "Coal Stockpile": {
+    "concept": "Coal Stockpile",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "iron_still_plant"
+    ],
+    "appearance": "Coal stockpiles appear as dark gray to pitch black, irregular mounds or elongated ridges ranging from tens to hundreds of meters in size, casting uneven, textured shadows that reveal their sloped, granular nature.",
+    "confusers": "They are most often mistaken for iron ore stockpiles, petroleum coke piles, or freshly paved asphalt, but can be distinguished because coal is distinctly blacker than reddish iron ore and forms textured, elevated mounds unlike flat, shadowless paving.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a coal stockpile visible in it? Coal stockpiles appear as dark gray to pitch black, irregular mounds or elongated ridges ranging from tens to hundreds of meters in size, casting uneven, textured shadows that reveal their sloped, granular nature. Do not confuse with: They are most often mistaken for iron ore stockpiles, petroleum coke piles, or freshly paved asphalt, but can be distinguished because coal is distinctly blacker than reddish iron ore and forms textured, elevated mounds unlike flat, shadowless paving. Answer with exactly one word: yes or no."
+  },
+  "Coal Conveyor": {
+    "concept": "Coal Conveyor",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as a long, narrow, elevated linear structure ranging from 50 to several hundred meters in length, it is typically dark grey, black, or rusty in color and casts a distinct linear shadow that often reveals its supporting pillars.",
+    "confusers": "It is most often mistaken for large pipelines, covered walkways, or narrow access roads, but can be distinguished by the dark coal dust often coating its surface and the presence of square transfer towers at its sharp, angled joints.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a coal conveyor visible in it? Appearing as a long, narrow, elevated linear structure ranging from 50 to several hundred meters in length, it is typically dark grey, black, or rusty in color and casts a distinct linear shadow that often reveals its supporting pillars. Do not confuse with: It is most often mistaken for large pipelines, covered walkways, or narrow access roads, but can be distinguished by the dark coal dust often coating its surface and the presence of square transfer towers at its sharp, angled joints. Answer with exactly one word: yes or no."
+  },
+  "Switchyard": {
+    "concept": "Switchyard",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "nuclear_plants",
+      "iron_still_plant",
+      "lng_terminals",
+      "oil_refineries"
+    ],
+    "appearance": "Appearing as a rectangular grid-like arrangement of metallic grey or white components typically spanning 50 to 200 meters, a switchyard casts complex, lattice-like shadows from its tall towers and suspended lines.",
+    "confusers": "It is most often mistaken for parking lots, solar farms, or container storage yards, but can be distinguished by its intricate lattice shadows, tall transmission towers, and connecting high-voltage power lines rather than flat panels or solid rectangular vehicles.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a switchyard visible in it? Appearing as a rectangular grid-like arrangement of metallic grey or white components typically spanning 50 to 200 meters, a switchyard casts complex, lattice-like shadows from its tall towers and suspended lines. Do not confuse with: It is most often mistaken for parking lots, solar farms, or container storage yards, but can be distinguished by its intricate lattice shadows, tall transmission towers, and connecting high-voltage power lines rather than flat panels or solid rectangular vehicles. Answer with exactly one word: yes or no."
+  },
+  "Ash Pond": {
+    "concept": "Ash Pond",
+    "label": "specific",
+    "classes": [
+      "power_plants"
+    ],
+    "appearance": "Appearing as large rectangular or irregularly shaped basins ranging from 100 to over 1000 meters across, they contain dark grey, black, or murky blue water with visible sediment gradients and cast no internal shadows due to their flat, excavated surface.",
+    "confusers": "They are most often mistaken for wastewater treatment ponds, natural lakes, or mining tailings dams, but can be distinguished by their distinct greyish-black coal ash deposits and direct pipeline connections to power generation units rather than mechanical aerators or natural drainage patterns.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an ash pond visible in it? Appearing as large rectangular or irregularly shaped basins ranging from 100 to over 1000 meters across, they contain dark grey, black, or murky blue water with visible sediment gradients and cast no internal shadows due to their flat, excavated surface. Do not confuse with: They are most often mistaken for wastewater treatment ponds, natural lakes, or mining tailings dams, but can be distinguished by their distinct greyish-black coal ash deposits and direct pipeline connections to power generation units rather than mechanical aerators or natural drainage patterns. Answer with exactly one word: yes or no."
+  },
+  "Chimney Stack": {
+    "concept": "Chimney Stack",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "iron_still_plant",
+      "oil_refineries",
+      "lng_terminals",
+      "nuclear_plants"
+    ],
+    "appearance": "Appearing as a small 2 to 10 meter circular dot in gray, white, or red-and-white stripes, a chimney stack is most easily identified by its exceptionally long, needle-like shadow cast across the ground.",
+    "confusers": "It is most often mistaken for silos, water towers, or flare stacks, but can be distinguished by its much longer, narrower shadow and the occasional presence of a visible smoke or steam plume emitting from the open top.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a chimney stack visible in it? Appearing as a small 2 to 10 meter circular dot in gray, white, or red-and-white stripes, a chimney stack is most easily identified by its exceptionally long, needle-like shadow cast across the ground. Do not confuse with: It is most often mistaken for silos, water towers, or flare stacks, but can be distinguished by its much longer, narrower shadow and the occasional presence of a visible smoke or steam plume emitting from the open top. Answer with exactly one word: yes or no."
+  },
+  "Cooling Water Reservoir": {
+    "concept": "Cooling Water Reservoir",
+    "label": "shared",
+    "classes": [
+      "power_plants",
+      "nuclear_plants"
+    ],
+    "appearance": "Appearing as large rectangular or irregularly shaped bodies of water ranging from 50 to over 500 meters in size, they present as flat, dark blue, green, or black surfaces that cast no shadows themselves but may be bordered by shadow-casting embankments.",
+    "confusers": "They are most often mistaken for wastewater treatment ponds, settling basins, or natural lakes, but can be distinguished by the absence of surface aerators and the presence of large, direct intake and outfall channels connecting them to the main plant.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a cooling water reservoir visible in it? Appearing as large rectangular or irregularly shaped bodies of water ranging from 50 to over 500 meters in size, they present as flat, dark blue, green, or black surfaces that cast no shadows themselves but may be bordered by shadow-casting embankments. Do not confuse with: They are most often mistaken for wastewater treatment ponds, settling basins, or natural lakes, but can be distinguished by the absence of surface aerators and the presence of large, direct intake and outfall channels connecting them to the main plant. Answer with exactly one word: yes or no."
+  },
+  "Circular Clarifier": {
+    "concept": "Circular Clarifier",
+    "label": "shared",
+    "classes": [
+      "stp_plants",
+      "oil_refineries",
+      "iron_still_plant",
+      "power_plants"
+    ],
+    "appearance": "Appearing as large circular tanks typically 15 to 50 meters in diameter, they contain dark or greenish water with a distinct radial bridge mechanism on top and cast a low-profile shadow.",
+    "confusers": "Most often mistaken for above-ground storage tanks or sludge thickeners, they are distinguished by their open tops revealing liquid and a visible rotating radial bridge or scraper arm rather than a solid roof.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a circular clarifier visible in it? Appearing as large circular tanks typically 15 to 50 meters in diameter, they contain dark or greenish water with a distinct radial bridge mechanism on top and cast a low-profile shadow. Do not confuse with: Most often mistaken for above-ground storage tanks or sludge thickeners, they are distinguished by their open tops revealing liquid and a visible rotating radial bridge or scraper arm rather than a solid roof. Answer with exactly one word: yes or no."
+  },
+  "Aeration Basin": {
+    "concept": "Aeration Basin",
+    "label": "shared",
+    "classes": [
+      "stp_plants",
+      "oil_refineries",
+      "iron_still_plant"
+    ],
+    "appearance": "Aeration basins appear as rectangular or circular concrete-walled pools ranging from 20 to 100 meters in size, containing dark water with distinct white frothy patches or bubbling textures, and casting minimal shadows due to their low profile.",
+    "confusers": "They are most often mistaken for clarifiers, settling ponds, or covered storage tanks, but can be distinguished by the active white bubbling or frothy texture on their water surface, unlike the smooth surfaces of clarifiers or the solid, shadow-casting roofs of tanks.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an aeration basin visible in it? Aeration basins appear as rectangular or circular concrete-walled pools ranging from 20 to 100 meters in size, containing dark water with distinct white frothy patches or bubbling textures, and casting minimal shadows due to their low profile. Do not confuse with: They are most often mistaken for clarifiers, settling ponds, or covered storage tanks, but can be distinguished by the active white bubbling or frothy texture on their water surface, unlike the smooth surfaces of clarifiers or the solid, shadow-casting roofs of tanks. Answer with exactly one word: yes or no."
+  },
+  "Sludge Digester": {
+    "concept": "Sludge Digester",
+    "label": "specific",
+    "classes": [
+      "stp_plants"
+    ],
+    "appearance": "Appearing as large cylindrical tanks with domed or flat roofs ranging from 15 to 40 meters in diameter, they are typically concrete-gray or metallic in color and cast distinct, tall cylindrical shadows.",
+    "confusers": "They are most often mistaken for petroleum storage tanks, water towers, or clarifiers, but can be distinguished by their solid domed roofs with central gas-handling piping rather than open liquid surfaces or floating roof mechanisms.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a sludge digester visible in it? Appearing as large cylindrical tanks with domed or flat roofs ranging from 15 to 40 meters in diameter, they are typically concrete-gray or metallic in color and cast distinct, tall cylindrical shadows. Do not confuse with: They are most often mistaken for petroleum storage tanks, water towers, or clarifiers, but can be distinguished by their solid domed roofs with central gas-handling piping rather than open liquid surfaces or floating roof mechanisms. Answer with exactly one word: yes or no."
+  },
+  "Sludge Drying Bed": {
+    "concept": "Sludge Drying Bed",
+    "label": "specific",
+    "classes": [
+      "stp_plants"
+    ],
+    "appearance": "Appearing as flat, ground-level rectangular basins ranging from 10 to 50 meters in length, they exhibit dark brown, black, or gray colors depending on moisture content and cast negligible shadows.",
+    "confusers": "They are most often mistaken for shallow retention ponds, small solar arrays, or agricultural plots, but can be distinguished by their strict rectangular grid arrangement of multiple cells showing varying shades of dark, drying material without any reflective panels or water ripples.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a sludge drying bed visible in it? Appearing as flat, ground-level rectangular basins ranging from 10 to 50 meters in length, they exhibit dark brown, black, or gray colors depending on moisture content and cast negligible shadows. Do not confuse with: They are most often mistaken for shallow retention ponds, small solar arrays, or agricultural plots, but can be distinguished by their strict rectangular grid arrangement of multiple cells showing varying shades of dark, drying material without any reflective panels or water ripples. Answer with exactly one word: yes or no."
+  },
+  "Rectangular Sedimentation Tank": {
+    "concept": "Rectangular Sedimentation Tank",
+    "label": "shared",
+    "classes": [
+      "stp_plants",
+      "iron_still_plant",
+      "oil_refineries",
+      "power_plants"
+    ],
+    "appearance": "Appearing as a rectangular basin typically 10 to 50 meters long, it features dark water or sludge-colored contents surrounded by gray concrete walls that cast minimal shadows due to its low profile.",
+    "confusers": "It is most often mistaken for aeration basins, storage pools, or flat building roofs, but can be distinguished by the presence of longitudinal scraper bridges, baffles, and a lack of surface turbulence or HVAC units.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a rectangular sedimentation tank visible in it? Appearing as a rectangular basin typically 10 to 50 meters long, it features dark water or sludge-colored contents surrounded by gray concrete walls that cast minimal shadows due to its low profile. Do not confuse with: It is most often mistaken for aeration basins, storage pools, or flat building roofs, but can be distinguished by the presence of longitudinal scraper bridges, baffles, and a lack of surface turbulence or HVAC units. Answer with exactly one word: yes or no."
+  },
+  "Treatment Train Layout": {
+    "concept": "Treatment Train Layout",
+    "label": "specific",
+    "classes": [
+      "stp_plants"
+    ],
+    "appearance": "A sequential arrangement of interconnected rectangular basins and circular tanks, typically spanning 50 to 200 meters in total length, featuring concrete-gray or dark liquid-filled surfaces that cast low, distinct geometric shadows.",
+    "confusers": "It is most often mistaken for bulk liquid storage tank farms or cooling tower arrays, but can be distinguished by the visible sequence of open-top basins with varying liquid colors and internal mechanical scrapers or baffles.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a treatment train layout visible in it? A sequential arrangement of interconnected rectangular basins and circular tanks, typically spanning 50 to 200 meters in total length, featuring concrete-gray or dark liquid-filled surfaces that cast low, distinct geometric shadows. Do not confuse with: It is most often mistaken for bulk liquid storage tank farms or cooling tower arrays, but can be distinguished by the visible sequence of open-top basins with varying liquid colors and internal mechanical scrapers or baffles. Answer with exactly one word: yes or no."
+  },
+  "Chlorination Contact Basin": {
+    "concept": "Chlorination Contact Basin",
+    "label": "specific",
+    "classes": [
+      "stp_plants"
+    ],
+    "appearance": "Appearing as a rectangular concrete structure typically 10 to 50 meters long, it contains dark water divided by thin gray baffle walls that cast slight internal shadows.",
+    "confusers": "It is most often mistaken for aeration basins, primary clarifiers, or clearwells, but can be distinguished by the distinct serpentine or zig-zag pattern of internal baffle walls visible at the water surface.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a chlorination contact basin visible in it? Appearing as a rectangular concrete structure typically 10 to 50 meters long, it contains dark water divided by thin gray baffle walls that cast slight internal shadows. Do not confuse with: It is most often mistaken for aeration basins, primary clarifiers, or clearwells, but can be distinguished by the distinct serpentine or zig-zag pattern of internal baffle walls visible at the water surface. Answer with exactly one word: yes or no."
+  },
+  "Distillation Column": {
+    "concept": "Distillation Column",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as a small metallic, white, or light gray circle 2 to 10 meters in diameter from directly above, this tall cylindrical structure is best identified by its exceptionally long, distinct linear shadow indicating a height of 20 to 80 meters.",
+    "confusers": "It is most often mistaken for smokestacks, flare stacks, or narrow storage tanks, but can be distinguished because storage tanks have much shorter shadows and wider diameters, while smokestacks lack the dense network of attached piping and platforms visible along the column's sides.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a distillation column visible in it? Appearing as a small metallic, white, or light gray circle 2 to 10 meters in diameter from directly above, this tall cylindrical structure is best identified by its exceptionally long, distinct linear shadow indicating a height of 20 to 80 meters. Do not confuse with: It is most often mistaken for smokestacks, flare stacks, or narrow storage tanks, but can be distinguished because storage tanks have much shorter shadows and wider diameters, while smokestacks lack the dense network of attached piping and platforms visible along the column's sides. Answer with exactly one word: yes or no."
+  },
+  "Crude Oil Storage Tank": {
+    "concept": "Crude Oil Storage Tank",
+    "label": "specific",
+    "classes": [
+      "oil_refineries"
+    ],
+    "appearance": "Appearing as a large circular structure typically 20 to 100 meters in diameter, it is usually painted white or light gray and casts a distinct crescent-shaped shadow that reveals its cylindrical height.",
+    "confusers": "It is most often mistaken for water treatment clarifiers or natural gas holders, but can be distinguished by the presence of a floating roof with visible seal rings and a surrounding earthen containment berm.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a crude oil storage tank visible in it? Appearing as a large circular structure typically 20 to 100 meters in diameter, it is usually painted white or light gray and casts a distinct crescent-shaped shadow that reveals its cylindrical height. Do not confuse with: It is most often mistaken for water treatment clarifiers or natural gas holders, but can be distinguished by the presence of a floating roof with visible seal rings and a surrounding earthen containment berm. Answer with exactly one word: yes or no."
+  },
+  "LPG Sphere": {
+    "concept": "LPG Sphere",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals"
+    ],
+    "appearance": "Appearing as a perfectly circular, highly reflective white or light gray object typically 10 to 30 meters in diameter, an LPG sphere casts a distinctive crescent or rounded shadow that reveals its three-dimensional spherical shape.",
+    "confusers": "It is most often mistaken for flat-roofed cylindrical storage tanks or elevated water towers, but can be distinguished by its distinctively rounded, crescent-like shadow that confirms a spherical body rather than a flat top or a supporting stem.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an LPG sphere visible in it? Appearing as a perfectly circular, highly reflective white or light gray object typically 10 to 30 meters in diameter, an LPG sphere casts a distinctive crescent or rounded shadow that reveals its three-dimensional spherical shape. Do not confuse with: It is most often mistaken for flat-roofed cylindrical storage tanks or elevated water towers, but can be distinguished by its distinctively rounded, crescent-like shadow that confirms a spherical body rather than a flat top or a supporting stem. Answer with exactly one word: yes or no."
+  },
+  "Tank Farm": {
+    "concept": "Tank Farm",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals",
+      "power_plants",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as clusters of circular structures typically 10 to 100 meters in diameter, they are usually white or light gray and cast distinct crescent-shaped shadows that indicate their cylindrical height.",
+    "confusers": "They are most often mistaken for water treatment clarifiers or agricultural silos, but can be distinguished by their solid, closed roofs and dense interconnecting pipeline networks rather than open liquid surfaces or grain conveyors.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a tank farm visible in it? Appearing as clusters of circular structures typically 10 to 100 meters in diameter, they are usually white or light gray and cast distinct crescent-shaped shadows that indicate their cylindrical height. Do not confuse with: They are most often mistaken for water treatment clarifiers or agricultural silos, but can be distinguished by their solid, closed roofs and dense interconnecting pipeline networks rather than open liquid surfaces or grain conveyors. Answer with exactly one word: yes or no."
+  },
+  "Flare Stack": {
+    "concept": "Flare Stack",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals",
+      "iron_still_plant",
+      "stp_plants"
+    ],
+    "appearance": "Appearing as a tall, thin cylindrical or lattice tower typically 1 to 5 meters wide and 10 to 100 meters tall, it is usually metallic grey or white, often featuring a bright flame or smoke plume at the tip and casting a distinctively long, narrow shadow.",
+    "confusers": "It is most often mistaken for smokestacks, radio towers, or tall lighting poles, but can be distinguished by the presence of an active flame, a heat distortion artifact, or a smoke plume at its tip.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a flare stack visible in it? Appearing as a tall, thin cylindrical or lattice tower typically 1 to 5 meters wide and 10 to 100 meters tall, it is usually metallic grey or white, often featuring a bright flame or smoke plume at the tip and casting a distinctively long, narrow shadow. Do not confuse with: It is most often mistaken for smokestacks, radio towers, or tall lighting poles, but can be distinguished by the presence of an active flame, a heat distortion artifact, or a smoke plume at its tip. Answer with exactly one word: yes or no."
+  },
+  "Process Unit Piping": {
+    "concept": "Process Unit Piping",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals",
+      "iron_still_plant",
+      "power_plants"
+    ],
+    "appearance": "Appearing as a dense, complex network of thin, linear, and often parallel or right-angled metallic or gray lines ranging from 0.5 to several meters in width, process unit piping casts intricate, lattice-like shadows.",
+    "confusers": "It is most often mistaken for conveyor belts, catwalks, or structural support beams, but can be distinguished by its highly branched, maze-like routing with frequent right-angle turns and direct connections to cylindrical tanks and reactors rather than straight point-to-point paths.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a process unit piping visible in it? Appearing as a dense, complex network of thin, linear, and often parallel or right-angled metallic or gray lines ranging from 0.5 to several meters in width, process unit piping casts intricate, lattice-like shadows. Do not confuse with: It is most often mistaken for conveyor belts, catwalks, or structural support beams, but can be distinguished by its highly branched, maze-like routing with frequent right-angle turns and direct connections to cylindrical tanks and reactors rather than straight point-to-point paths. Answer with exactly one word: yes or no."
+  },
+  "Marine Loading Jetty": {
+    "concept": "Marine Loading Jetty",
+    "label": "shared",
+    "classes": [
+      "lng_terminals",
+      "oil_refineries",
+      "power_plants",
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as a long, narrow rectangular structure extending outward, typically 50 to 300 meters in length, it features a light gray or concrete color and casts a distinct, elongated shadow over the water surface.",
+    "confusers": "It is most often mistaken for a simple breakwater, a pedestrian pier, or a bridge, but can be distinguished by the presence of complex piping manifolds, loading arms, and moored industrial vessels alongside it.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a marine loading jetty visible in it? Appearing as a long, narrow rectangular structure extending outward, typically 50 to 300 meters in length, it features a light gray or concrete color and casts a distinct, elongated shadow over the water surface. Do not confuse with: It is most often mistaken for a simple breakwater, a pedestrian pier, or a bridge, but can be distinguished by the presence of complex piping manifolds, loading arms, and moored industrial vessels alongside it. Answer with exactly one word: yes or no."
+  },
+  "Reactor Containment Dome": {
+    "concept": "Reactor Containment Dome",
+    "label": "specific",
+    "classes": [
+      "nuclear_plants"
+    ],
+    "appearance": "Appearing as a massive circular or hemispherical structure typically 30 to 50 meters in diameter, it features a smooth white or light gray concrete surface that casts a distinct, rounded shadow.",
+    "confusers": "It is most often mistaken for bulk liquid storage tanks or large silos, but can be distinguished by its thick seamless concrete construction, lack of roof catwalks, and a distinctly domed shadow rather than a flat cylindrical one.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a reactor containment dome visible in it? Appearing as a massive circular or hemispherical structure typically 30 to 50 meters in diameter, it features a smooth white or light gray concrete surface that casts a distinct, rounded shadow. Do not confuse with: It is most often mistaken for bulk liquid storage tanks or large silos, but can be distinguished by its thick seamless concrete construction, lack of roof catwalks, and a distinctly domed shadow rather than a flat cylindrical one. Answer with exactly one word: yes or no."
+  },
+  "Reactor-Turbine Block Pair": {
+    "concept": "Reactor-Turbine Block Pair",
+    "label": "specific",
+    "classes": [
+      "nuclear_plants"
+    ],
+    "appearance": "Appearing as a tall cylindrical or domed structure attached to a long rectangular building, this light gray or concrete-colored pair spans roughly 100 to 200 meters in total length and casts a distinct composite shadow featuring both rounded and elongated rectangular profiles.",
+    "confusers": "It is most often mistaken for conventional fossil fuel power plant blocks, large manufacturing warehouses, or massive storage tanks, but can be distinguished by the unique pairing of a domed containment structure directly abutting a rectangular hall without the presence of tall smokestacks.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a reactor-turbine block pair visible in it? Appearing as a tall cylindrical or domed structure attached to a long rectangular building, this light gray or concrete-colored pair spans roughly 100 to 200 meters in total length and casts a distinct composite shadow featuring both rounded and elongated rectangular profiles. Do not confuse with: It is most often mistaken for conventional fossil fuel power plant blocks, large manufacturing warehouses, or massive storage tanks, but can be distinguished by the unique pairing of a domed containment structure directly abutting a rectangular hall without the presence of tall smokestacks. Answer with exactly one word: yes or no."
+  },
+  "Nuclear Site Layout": {
+    "concept": "Nuclear Site Layout",
+    "label": "specific",
+    "classes": [
+      "nuclear_plants"
+    ],
+    "appearance": "A nuclear site layout features a sprawling complex of large rectangular buildings and cylindrical containment domes spanning 500 to 2000 meters, predominantly light gray or white in color, casting prominent, varied shadows from its tall structures.",
+    "confusers": "It is most often mistaken for coal power plants, chemical refineries, or large desalination plants, but can be distinguished by the presence of massive, hemispherical concrete containment domes and the absence of large black coal stockpiles.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a nuclear site layout visible in it? A nuclear site layout features a sprawling complex of large rectangular buildings and cylindrical containment domes spanning 500 to 2000 meters, predominantly light gray or white in color, casting prominent, varied shadows from its tall structures. Do not confuse with: It is most often mistaken for coal power plants, chemical refineries, or large desalination plants, but can be distinguished by the presence of massive, hemispherical concrete containment domes and the absence of large black coal stockpiles. Answer with exactly one word: yes or no."
+  },
+  "Nuclear Cooling Intake Structure": {
+    "concept": "Nuclear Cooling Intake Structure",
+    "label": "shared",
+    "classes": [
+      "nuclear_plants",
+      "power_plants"
+    ],
+    "appearance": "Appearing as a large, rectangular, light gray concrete block typically 20 to 50 meters in size, it casts a distinct, blocky shadow over the adjacent water surface.",
+    "confusers": "It is most often mistaken for standard industrial pump houses, municipal water treatment facilities, or small docks, but can be distinguished by the presence of large trash racks, massive intake channels, and direct pipeline routing toward a nuclear reactor complex.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a nuclear cooling intake structure visible in it? Appearing as a large, rectangular, light gray concrete block typically 20 to 50 meters in size, it casts a distinct, blocky shadow over the adjacent water surface. Do not confuse with: It is most often mistaken for standard industrial pump houses, municipal water treatment facilities, or small docks, but can be distinguished by the presence of large trash racks, massive intake channels, and direct pipeline routing toward a nuclear reactor complex. Answer with exactly one word: yes or no."
+  },
+  "LNG Storage Tank": {
+    "concept": "LNG Storage Tank",
+    "label": "specific",
+    "classes": [
+      "lng_terminals"
+    ],
+    "appearance": "Appearing as massive, flat-topped or slightly domed circular structures typically 50 to 90 meters in diameter, they are usually painted white or light gray to reflect heat and cast a distinct, large, curved shadow.",
+    "confusers": "They are most often mistaken for crude oil storage tanks or large water reservoirs, but can be distinguished by their lack of external floating roofs and the presence of thick, heavily insulated cryogenic pipeline networks running across their tops.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an LNG storage tank visible in it? Appearing as massive, flat-topped or slightly domed circular structures typically 50 to 90 meters in diameter, they are usually painted white or light gray to reflect heat and cast a distinct, large, curved shadow. Do not confuse with: They are most often mistaken for crude oil storage tanks or large water reservoirs, but can be distinguished by their lack of external floating roofs and the presence of thick, heavily insulated cryogenic pipeline networks running across their tops. Answer with exactly one word: yes or no."
+  },
+  "Liquefaction Train": {
+    "concept": "Liquefaction Train",
+    "label": "specific",
+    "classes": [
+      "lng_terminals"
+    ],
+    "appearance": "Appearing as an elongated rectangular footprint of dense metallic grey or white piping and machinery typically 100 to 300 meters long, it casts complex, jagged shadows due to its varying equipment heights.",
+    "confusers": "It is most often mistaken for oil refinery distillation units or chemical processing plants, but can be distinguished by its massive, heavily insulated cryogenic heat exchangers and direct pipeline connections leading to domed LNG storage tanks.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a liquefaction train visible in it? Appearing as an elongated rectangular footprint of dense metallic grey or white piping and machinery typically 100 to 300 meters long, it casts complex, jagged shadows due to its varying equipment heights. Do not confuse with: It is most often mistaken for oil refinery distillation units or chemical processing plants, but can be distinguished by its massive, heavily insulated cryogenic heat exchangers and direct pipeline connections leading to domed LNG storage tanks. Answer with exactly one word: yes or no."
+  },
+  "LNG Carrier Berth": {
+    "concept": "LNG Carrier Berth",
+    "label": "specific",
+    "classes": [
+      "lng_terminals"
+    ],
+    "appearance": "Appearing as a long, rectangular concrete and steel pier structure typically 300 to 400 meters in length, it features light gray to white loading platforms that cast distinct, complex lattice-like shadows onto the water.",
+    "confusers": "It is most often mistaken for standard oil tanker terminals or container ship berths, but can be distinguished by the presence of specialized, bulky cryogenic loading arms and the lack of large gantry cranes.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an LNG carrier berth visible in it? Appearing as a long, rectangular concrete and steel pier structure typically 300 to 400 meters in length, it features light gray to white loading platforms that cast distinct, complex lattice-like shadows onto the water. Do not confuse with: It is most often mistaken for standard oil tanker terminals or container ship berths, but can be distinguished by the presence of specialized, bulky cryogenic loading arms and the lack of large gantry cranes. Answer with exactly one word: yes or no."
+  },
+  "Cryogenic Pipe Rack": {
+    "concept": "Cryogenic Pipe Rack",
+    "label": "shared",
+    "classes": [
+      "lng_terminals",
+      "oil_refineries"
+    ],
+    "appearance": "Appearing as long, linear, elevated structures ranging from 50 to over 500 meters in length, they are typically bright white or metallic due to heavy insulation and cast distinct, elongated parallel shadows.",
+    "confusers": "They are most often mistaken for standard process pipe racks, covered walkways, or conveyor belts, but can be distinguished by their thicker, highly reflective white insulation and direct routing to cryogenic tanks.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a cryogenic pipe rack visible in it? Appearing as long, linear, elevated structures ranging from 50 to over 500 meters in length, they are typically bright white or metallic due to heavy insulation and cast distinct, elongated parallel shadows. Do not confuse with: They are most often mistaken for standard process pipe racks, covered walkways, or conveyor belts, but can be distinguished by their thicker, highly reflective white insulation and direct routing to cryogenic tanks. Answer with exactly one word: yes or no."
+  },
+  "Regasification Unit": {
+    "concept": "Regasification Unit",
+    "label": "specific",
+    "classes": [
+      "lng_terminals"
+    ],
+    "appearance": "Appearing as a dense, rectangular grid of metallic or white heat exchangers and piping manifolds typically measuring 20 to 50 meters across, it casts complex, jagged shadows.",
+    "confusers": "It is most often mistaken for electrical substations, water treatment filtration blocks, or cooling towers, but can be distinguished by the thick, insulated cryogenic pipe racks connecting it directly to gas infrastructure.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a regasification unit visible in it? Appearing as a dense, rectangular grid of metallic or white heat exchangers and piping manifolds typically measuring 20 to 50 meters across, it casts complex, jagged shadows. Do not confuse with: It is most often mistaken for electrical substations, water treatment filtration blocks, or cooling towers, but can be distinguished by the thick, insulated cryogenic pipe racks connecting it directly to gas infrastructure. Answer with exactly one word: yes or no."
+  },
+  "Blast Furnace": {
+    "concept": "Blast Furnace",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "A blast furnace appears as a massive, tall cylindrical or conical tower, typically 20 to 40 meters in diameter, colored in dark gray, rusty brown, or metallic hues, casting a very long, distinct shadow due to its extreme height and complex surrounding superstructure.",
+    "confusers": "It is most often mistaken for large storage tanks, cooling towers, or chemical reactors, but can be distinguished by the dense network of large pipes, inclined conveyor belts feeding the top, and the attached cast house at its base.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a blast furnace visible in it? A blast furnace appears as a massive, tall cylindrical or conical tower, typically 20 to 40 meters in diameter, colored in dark gray, rusty brown, or metallic hues, casting a very long, distinct shadow due to its extreme height and complex surrounding superstructure. Do not confuse with: It is most often mistaken for large storage tanks, cooling towers, or chemical reactors, but can be distinguished by the dense network of large pipes, inclined conveyor belts feeding the top, and the attached cast house at its base. Answer with exactly one word: yes or no."
+  },
+  "Coke Oven Battery": {
+    "concept": "Coke Oven Battery",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as a long, narrow rectangular block typically 50 to 150 meters in length, a coke oven battery is usually dark gray or black due to soot and casts a distinct, elongated rectangular shadow.",
+    "confusers": "Most often mistaken for long warehouses, large conveyor galleries, or train cars, a coke oven battery can be distinguished by its heavy black soot staining, the track-mounted larry car on its roof, and the adjacent quench tower emitting steam.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a coke oven battery visible in it? Appearing as a long, narrow rectangular block typically 50 to 150 meters in length, a coke oven battery is usually dark gray or black due to soot and casts a distinct, elongated rectangular shadow. Do not confuse with: Most often mistaken for long warehouses, large conveyor galleries, or train cars, a coke oven battery can be distinguished by its heavy black soot staining, the track-mounted larry car on its roof, and the adjacent quench tower emitting steam. Answer with exactly one word: yes or no."
+  },
+  "Rolling Mill": {
+    "concept": "Rolling Mill",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as a massive, elongated rectangular building typically 300 to 1000 meters in length, it features a dull gray or reflective metal roof and casts a long, straight shadow indicative of its high-bay structure.",
+    "confusers": "It is most often mistaken for large commercial warehouses or automotive assembly plants, but can be distinguished by the heavy rail lines entering directly into the building and adjacent open storage yards filled with finished metal coils or bars.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a rolling mill visible in it? Appearing as a massive, elongated rectangular building typically 300 to 1000 meters in length, it features a dull gray or reflective metal roof and casts a long, straight shadow indicative of its high-bay structure. Do not confuse with: It is most often mistaken for large commercial warehouses or automotive assembly plants, but can be distinguished by the heavy rail lines entering directly into the building and adjacent open storage yards filled with finished metal coils or bars. Answer with exactly one word: yes or no."
+  },
+  "Iron Ore Stockpile": {
+    "concept": "Iron Ore Stockpile",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as elongated ridges or conical mounds ranging from 50 to 300 meters in length, iron ore stockpiles exhibit a distinct dark reddish-brown color and cast soft, sloped shadows that reveal their uneven, peaked topography.",
+    "confusers": "They are most often mistaken for coal stockpiles or bauxite piles, but can be distinguished by their deep rust-red hue, which contrasts with the stark black of coal and the lighter, brighter orange of bauxite.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is an iron ore stockpile visible in it? Appearing as elongated ridges or conical mounds ranging from 50 to 300 meters in length, iron ore stockpiles exhibit a distinct dark reddish-brown color and cast soft, sloped shadows that reveal their uneven, peaked topography. Do not confuse with: They are most often mistaken for coal stockpiles or bauxite piles, but can be distinguished by their deep rust-red hue, which contrasts with the stark black of coal and the lighter, brighter orange of bauxite. Answer with exactly one word: yes or no."
+  },
+  "Slag Dump": {
+    "concept": "Slag Dump",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "Slag dumps appear as irregular, terraced, or fan-shaped mounds ranging from 50 to several hundred meters in size, typically exhibiting dark grey, black, or rusty brown colors and casting uneven, rugged shadows due to their varying pile heights.",
+    "confusers": "They are most often mistaken for coal stockpiles, aggregate piles, or natural hills, but can be distinguished by their distinct terraced dumping edges, heterogeneous crusty texture, and occasional glowing hot spots from freshly dumped material.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a slag dump visible in it? Slag dumps appear as irregular, terraced, or fan-shaped mounds ranging from 50 to several hundred meters in size, typically exhibiting dark grey, black, or rusty brown colors and casting uneven, rugged shadows due to their varying pile heights. Do not confuse with: They are most often mistaken for coal stockpiles, aggregate piles, or natural hills, but can be distinguished by their distinct terraced dumping edges, heterogeneous crusty texture, and occasional glowing hot spots from freshly dumped material. Answer with exactly one word: yes or no."
+  },
+  "Gas Holder": {
+    "concept": "Gas Holder",
+    "label": "shared",
+    "classes": [
+      "iron_still_plant",
+      "stp_plants",
+      "oil_refineries"
+    ],
+    "appearance": "Appearing as large circular or cylindrical structures typically 20 to 80 meters in diameter, gas holders are usually metallic gray, white, or rust-colored and cast distinct, tall cylindrical or tiered shadows.",
+    "confusers": "Most often mistaken for liquid petroleum storage tanks, water clarifiers, or bulk silos, gas holders can be distinguished by their external lattice guide frames or a central domed roof that casts varying internal shadows depending on its inflation height.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a gas holder visible in it? Appearing as large circular or cylindrical structures typically 20 to 80 meters in diameter, gas holders are usually metallic gray, white, or rust-colored and cast distinct, tall cylindrical or tiered shadows. Do not confuse with: Most often mistaken for liquid petroleum storage tanks, water clarifiers, or bulk silos, gas holders can be distinguished by their external lattice guide frames or a central domed roof that casts varying internal shadows depending on its inflation height. Answer with exactly one word: yes or no."
+  },
+  "Sinter Plant": {
+    "concept": "Sinter Plant",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "A sinter plant appears as a large, elongated rectangular structure, typically 100 to 300 meters long, covered in dark gray or rust-red dust, casting complex, multi-level shadows from its tall exhaust stacks and attached circular or linear cooling beds.",
+    "confusers": "It is most often mistaken for a coal power plant, a cement plant, or a rolling mill, but can be distinguished by the heavy reddish-brown iron dust staining its roof and the presence of a distinct circular or linear open-air cooling bed.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a sinter plant visible in it? A sinter plant appears as a large, elongated rectangular structure, typically 100 to 300 meters long, covered in dark gray or rust-red dust, casting complex, multi-level shadows from its tall exhaust stacks and attached circular or linear cooling beds. Do not confuse with: It is most often mistaken for a coal power plant, a cement plant, or a rolling mill, but can be distinguished by the heavy reddish-brown iron dust staining its roof and the presence of a distinct circular or linear open-air cooling bed. Answer with exactly one word: yes or no."
+  },
+  "Continuous Casting Building": {
+    "concept": "Continuous Casting Building",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "It is a massive, elongated rectangular or stepped-roof industrial hall, typically 100 to 300 meters long, featuring a dull gray or weathered metallic roof that casts a prominent, tall shadow due to its multi-story height.",
+    "confusers": "It is most often mistaken for rolling mills, basic oxygen furnace buildings, or general warehouses, but can be distinguished by its distinct stepped roofline indicating the high casting tower dropping down to a lower run-out area.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a continuous casting building visible in it? It is a massive, elongated rectangular or stepped-roof industrial hall, typically 100 to 300 meters long, featuring a dull gray or weathered metallic roof that casts a prominent, tall shadow due to its multi-story height. Do not confuse with: It is most often mistaken for rolling mills, basic oxygen furnace buildings, or general warehouses, but can be distinguished by its distinct stepped roofline indicating the high casting tower dropping down to a lower run-out area. Answer with exactly one word: yes or no."
+  },
+  "Scrap Metal Yard": {
+    "concept": "Scrap Metal Yard",
+    "label": "specific",
+    "classes": [
+      "iron_still_plant"
+    ],
+    "appearance": "Appearing as an irregularly shaped area typically 50 to 200 meters in size, it features a chaotic, textured mix of rust, gray, and metallic colors that cast uneven, jagged shadows.",
+    "confusers": "It is most often mistaken for raw material stockpiles or active construction sites, but can be distinguished by the highly irregular, multi-colored, and jagged texture of the piles rather than uniform, monochromatic mounds.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a scrap metal yard visible in it? Appearing as an irregularly shaped area typically 50 to 200 meters in size, it features a chaotic, textured mix of rust, gray, and metallic colors that cast uneven, jagged shadows. Do not confuse with: It is most often mistaken for raw material stockpiles or active construction sites, but can be distinguished by the highly irregular, multi-colored, and jagged texture of the piles rather than uniform, monochromatic mounds. Answer with exactly one word: yes or no."
+  },
+  "Railway Siding": {
+    "concept": "Railway Siding",
+    "label": "shared",
+    "classes": [
+      "iron_still_plant",
+      "power_plants",
+      "oil_refineries",
+      "lng_terminals",
+      "nuclear_plants"
+    ],
+    "appearance": "Appearing as long, parallel linear tracks typically 100 to 500 meters in length, they are usually dark gray or rust-colored with faint, low-profile shadows cast by the rails or parked railcars.",
+    "confusers": "They are most often mistaken for access roads, pipeline corridors, or conveyor belts, but can be distinguished by the presence of parallel steel rails, gentle turning radii, and parked rectangular railcars.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a railway siding visible in it? Appearing as long, parallel linear tracks typically 100 to 500 meters in length, they are usually dark gray or rust-colored with faint, low-profile shadows cast by the rails or parked railcars. Do not confuse with: They are most often mistaken for access roads, pipeline corridors, or conveyor belts, but can be distinguished by the presence of parallel steel rails, gentle turning radii, and parked rectangular railcars. Answer with exactly one word: yes or no."
+  },
+  "Pipe Rack": {
+    "concept": "Pipe Rack",
+    "label": "shared",
+    "classes": [
+      "oil_refineries",
+      "lng_terminals",
+      "iron_still_plant",
+      "power_plants",
+      "nuclear_plants",
+      "stp_plants"
+    ],
+    "appearance": "Appearing as long, linear, and sometimes branching metallic, gray, or rust-colored structures typically 2 to 10 meters wide and tens to hundreds of meters long, they cast distinct parallel or lattice-like shadows.",
+    "confusers": "They are most often mistaken for covered walkways, conveyor belts, or narrow roads, but can be distinguished by the visible parallel striations of individual pipes and the lack of a solid continuous roof or smooth paved surface.",
+    "question_object_template": "This is an aerial satellite image, {scale_text}. Is a pipe rack visible in it? Appearing as long, linear, and sometimes branching metallic, gray, or rust-colored structures typically 2 to 10 meters wide and tens to hundreds of meters long, they cast distinct parallel or lattice-like shadows. Do not confuse with: They are most often mistaken for covered walkways, conveyor belts, or narrow roads, but can be distinguished by the visible parallel striations of individual pipes and the lack of a solid continuous roof or smooth paved surface. Answer with exactly one word: yes or no."
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "power_plants::Cooling Tower": {
+    "appearance": "Typically appearing in clusters of two to six, these are huge hyperbolic concrete shells, 60 to 150 m across, featuring a thick grey rim around a dark hollow center. They cast the longest shadows on the site and often emit a thick white plume.",
+    "confusers": "Large water or fuel storage tanks have solid roofs and cast short shadows, while mechanical draft towers appear as rectangular banks of small fan circles rather than massive open-topped shells.",
+    "placement": "Clustered on the periphery of the site away from the boiler and fuel storage areas, they sit near the turbine hall and are fed by large pipes from a nearby river or reservoir."
+  },
+  "nuclear_plants::Cooling Tower": {
+    "appearance": "One to four huge hyperbolic concrete shells, 100 to 150 m across, with a thick grey rim around a dark hollow centre. They cast the longest shadows on the site and frequently emit a massive white plume.",
+    "confusers": "Reactor containment buildings are also massive round concrete structures, but they feature solid domed roofs and shorter shadows instead of a dark open centre.",
+    "placement": "Situated on land near the turbine hall and reactor block, fed by large pipes from a nearby river, lake, or coastal intake."
+  },
+  "oil_refineries::Cooling Tower": {
+    "appearance": "A long, rectangular bank of cells, typically 10 to 20 m wide and up to 100 m long, featuring a linear row of dark circular fan openings on a flat roof. A site typically has one or several of these multi-cell structures, which cast a moderate shadow and often emit a thick white vapor plume.",
+    "confusers": "Air-cooled heat exchangers also feature fan circles but are smaller, elevated over pipe racks, and do not emit vapor plumes, while standard warehouses lack the large, distinct row of circular roof vents.",
+    "placement": "Sited on the perimeter of the main processing areas, connected by large water pipe runs to heat exchangers, and often located near water treatment basins."
+  },
+  "iron_still_plant::Cooling Tower": {
+    "appearance": "One to three large hyperbolic concrete shells, typically 40 to 100 m across, featuring a thick grey rim around a dark hollow center, casting a long shadow and often emitting a white steam plume.",
+    "confusers": "A gas holder is similarly large and round but has a solid flat or domed roof instead of a dark hollow center, while a blast furnace is surrounded by a complex network of external pipes and conveyors rather than being a smooth shell.",
+    "placement": "Sited near the captive power plant, blast furnaces, or rolling mills, connected by large overhead water mains to pump houses and the heavy cooling circuits."
+  },
+  "lng_terminals::Cooling Tower": {
+    "appearance": "Typically appearing as one or more long rectangular banks of mechanical draft towers, featuring a row of circular fan openings 5 to 10 m across on a flat roof. They are usually grey or industrial white, cast a moderate rectangular shadow, and often emit a white vapor plume.",
+    "confusers": "Air-cooled heat exchangers also display rows of small fans but are elevated directly over the complex pipe racks of the process trains, whereas cooling towers are ground-level structures with large water pipe connections.",
+    "placement": "Sited on land near the compressor trains or on-site power plant, connected by large pipes to a marine water intake or pump house."
+  },
+  "power_plants::Mechanical Draft Cooling Tower": {
+    "appearance": "A rectangular bank or ring of identical cells, 40 to 150 m long, each topped by a bright circular fan opening, presenting a low profile with a short shadow and often emitting visible mist. A site typically features one to several of these banks depending on the number of generating units.",
+    "confusers": "A natural draft cooling tower is a single massive, tall hollow shell without fan cells, while a boiler building roof with vents will show smaller, irregularly spaced openings rather than a continuous bank of large identical cells.",
+    "placement": "Sited on land near the turbine hall, it is connected to the condenser units by large-diameter water circulation pipes and is typically positioned away from the fuel storage yards to prevent moisture interference."
+  },
+  "nuclear_plants::Mechanical Draft Cooling Tower": {
+    "appearance": "A massive rectangular bank or ring of identical cells, typically 100 to 200 m long and appearing in sets of two or more, featuring neutral-colored materials with each cell topped by a bright circular fan opening. They maintain a low profile with a short shadow, though the structure is often obscured by heavy mist or steam plumes.",
+    "confusers": "A natural draft cooling tower is a single giant hyperbolic shell casting a massive shadow rather than a low bank of fans, while a large building roof with HVAC vents lacks the dense, regular row of massive fan openings and heavy steam.",
+    "placement": "Situated on land adjacent to the turbine hall, connected by massive circulating water pipes, and typically located between the main power block and a large body of water."
+  },
+  "oil_refineries::Mechanical Draft Cooling Tower": {
+    "appearance": "A rectangular bank of identical cells, 50 to 150 m long, each topped by a bright circular fan opening, presenting a low profile with a short shadow and often emitting visible mist. A site typically features one to three of these large banks to handle massive process heat loads.",
+    "confusers": "Air-cooled heat exchangers (fin-fan coolers) also feature banks of circular fans, but they are mounted directly above pipe racks or process units rather than sitting on the ground as a standalone structure.",
+    "placement": "Sited in a dedicated utility area away from the main distillation and cracking units, connected to the broader plant by large cooling water pipe runs."
+  },
+  "lng_terminals::Mechanical Draft Cooling Tower": {
+    "appearance": "Typically one to three rectangular banks of identical cells, 40 to 150 m long, each cell topped by a bright circular fan opening, presenting a low profile with a short shadow and often mist above the fans.",
+    "confusers": "Air-cooled heat exchangers also feature banks of fans, but they are typically elevated on pipe racks directly over process areas, have smaller and more numerous fans, and do not emit mist.",
+    "placement": "Sited on land next to the liquefaction trains or on-site power generation units, connected by large water pipes, and kept separate from the main cryogenic storage tanks."
+  },
+  "iron_still_plant::Mechanical Draft Cooling Tower": {
+    "appearance": "A rectangular bank of identical cells, 40 to 150 m long, each topped by a bright circular fan opening, often appearing soot-stained except where washed by mist. A site typically has several of these low-profile banks distributed across different process areas, casting short shadows.",
+    "confusers": "Baghouses and dust collection systems are similarly sized rectangular structures with roof vents, but they connect to massive gas ducts rather than water pipes and never emit water mist.",
+    "placement": "Sits on land immediately adjacent to high-heat process units like blast furnaces, continuous casters, or rolling mills, connected to them by large above-ground water pipes."
+  },
+  "power_plants::Boiler Building": {
+    "appearance": "Typically one per generating unit, this boxy, industrial-grey structure is the tallest building on site, measuring 50 to 90 meters on a side. It features complex roof ducting and casts a very long shadow, often with tall chimney stacks standing directly beside it.",
+    "confusers": "The attached turbine hall is often mistaken for it, but the turbine hall is a longer, significantly lower building with a smoother roof and shorter shadow.",
+    "placement": "Centrally located on land, it sits directly between the attached turbine hall and the chimney stacks, with an overhead conveyor arriving from the fuel storage yard."
+  },
+  "oil_refineries::Boiler Building": {
+    "appearance": "A tall, boxy industrial building, typically 30 to 60 m on a side, featuring a cluttered roof with ducts and vents, casting a long shadow, with chimney stacks standing directly beside it. A site typically has one or two of these to supply steam and power.",
+    "confusers": "A warehouse is low with a smooth roof and casts a short shadow without stacks, while major process units are tall but consist of open-air steel frameworks and vessels rather than an enclosed building.",
+    "placement": "Located in the utility area away from the main processing units, it sits next to water treatment facilities and connects to the rest of the site via large overhead pipe racks carrying steam."
+  },
+  "iron_still_plant::Boiler Building": {
+    "appearance": "A tall, boxy structure, typically 30 to 80 m on a side, casting a long shadow and featuring complex roof ducting and adjacent chimney stacks. A site usually has one or two of these to house captive power generation, often appearing dark or soot-stained.",
+    "confusers": "It is most often mistaken for a primary melt shop building, but the melt shop has massive ridge vents on the roof and rail lines for hot metal cars, whereas this building is attached to a lower turbine hall.",
+    "placement": "Situated in the utility area, it is connected to a lower turbine hall on one side and fed by large overhead gas pipelines from the main process units rather than a coal conveyor."
+  },
+  "power_plants::Turbine Hall": {
+    "appearance": "A single, long, rectangular hall, typically 100 to 250 m long and 30 to 60 m wide, featuring a smooth grey or white roof and casting a moderate shadow.",
+    "confusers": "Large storage warehouses or maintenance buildings may look similar, but the turbine hall is directly attached to the tall boiler block and flanked by transformers.",
+    "placement": "Situated on land directly joined to the boiler building, with transformers and the switchyard located immediately adjacent to its long side."
+  },
+  "nuclear_plants::Turbine Hall": {
+    "appearance": "A massive, long rectangular hall, typically 100 to 250 m long and 30 to 60 m wide, with a smooth grey or white roof casting a moderate shadow. There is usually one dedicated hall per reactor, or a single exceptionally long shared hall spanning multiple reactors.",
+    "confusers": "It is most often mistaken for a large auxiliary or radwaste building, but the turbine hall is significantly larger and is uniquely positioned between the reactor building and the electrical switchyard.",
+    "placement": "It sits centrally on the site, directly joined or immediately adjacent to the reactor building on one side and the transformers and switchyard on the other."
+  },
+  "power_plants::Coal Stockpile": {
+    "appearance": "Typically appearing as one or two massive black, irregular mounds or long ridges 150 to 500 m across. They feature soft sloped shadows that reveal pile height and often have conveyor lines running directly onto them.",
+    "confusers": "Dark water in settling ponds is flat and casts no pile shadow, while asphalt yards are flat and uniform rather than mounded.",
+    "placement": "Situated in an open yard, it is connected by conveyors directly to the boiler building and typically sits adjacent to a rail loop or barge dock for fuel delivery."
+  },
+  "iron_still_plant::Coal Stockpile": {
+    "appearance": "Multiple black, irregular mounds or long ridges, 150 to 500 meters across, with soft sloped shadows that show the pile height and conveyor lines running onto them.",
+    "confusers": "Iron ore piles are rust red or brown, slag dumps are grey and terraced, and dark water or asphalt is flat and casts no pile shadow.",
+    "placement": "Situated in an open raw materials yard, connected by conveyors to the coke ovens and often adjacent to a rail loop or bulk shipping dock."
+  },
+  "power_plants::Coal Conveyor": {
+    "appearance": "Typically appearing as one to three dark, linear bands 5 to 15 m wide and hundreds of metres long, they are elevated on pillars casting thin shadows and often slope upward through square transfer towers.",
+    "confusers": "It is most often mistaken for an elevated access road or a large water pipeline, but roads are wider and lighter in colour, while pipelines lack square transfer towers and do not originate at a dark fuel stockpile.",
+    "placement": "It forms a direct, often angled link starting from the dark fuel stockpile or rail unloading station and terminating high up on the main boiler building or adjacent storage silos."
+  },
+  "iron_still_plant::Coal Conveyor": {
+    "appearance": "A network of single dark bands, 5 to 15 m wide and hundreds of metres long, elevated on pillars and casting thin shadows, often sloping up into buildings through square transfer towers. A typical site features multiple interconnected conveyors forming a complex routing system.",
+    "confusers": "Iron ore conveyors look identical but originate at reddish ore stockpiles rather than black coal piles, while pipe racks consist of multiple parallel lines connecting chemical by-product units.",
+    "placement": "Originates at a black coal stockpile or unloading dock and routes directly to a coke oven battery's coal tower or a pulverized coal preparation building near the blast furnaces."
+  },
+  "power_plants::Switchyard": {
+    "appearance": "Typically appearing as a single rectangular fenced grid of grey lattice structures 150 to 400 m across, it features fine lattice shadows and transmission lines leaving from one side.",
+    "confusers": "A laydown yard or employee parking lot contains solid equipment or vehicles, lacking the regular grid of open lattice structures and their intricate shadows.",
+    "placement": "Situated directly adjacent to the turbine hall on the cleaner side of the site, it connects to a dedicated corridor of transmission towers leading away from the facility."
+  },
+  "nuclear_plants::Switchyard": {
+    "appearance": "Typically one or two per site, this is a massive rectangular fenced grid of grey lattice structures, 200 to 500 m across, with fine lattice shadows and heavy transmission lines leaving from one side.",
+    "confusers": "A large employee parking lot is smooth with painted stalls and cars, and a construction laydown area has irregular piles of materials rather than a neat grid of tall lattice structures.",
+    "placement": "Situated on land directly adjacent to or very near the turbine halls, never in open water, with a wide corridor of high-voltage transmission towers leading away from it."
+  },
+  "iron_still_plant::Switchyard": {
+    "appearance": "A rectangular fenced grid of grey lattice structures, typically 100 to 300 m across, casting fine lattice shadows with transmission lines leaving from one side. A site typically has one or two of these yards to handle massive electrical loads.",
+    "confusers": "A structural steel or pipe storage yard features linear arrangements but casts solid shadows rather than fine lattice patterns, while a scrap yard is chaotic and piled rather than a neat grid.",
+    "placement": "Located on the perimeter of the site or adjacent to high-demand process buildings like the melt shop or rolling mills, with a clear corridor of transmission towers leading away from it."
+  },
+  "lng_terminals::Switchyard": {
+    "appearance": "A single rectangular fenced grid of grey lattice structures and transformers, typically 50 to 200 meters across, casting fine lattice shadows.",
+    "confusers": "A pipe manifold or metering station features dense, continuous piping and casts solid shadows, whereas this consists of a grid of isolated lattice towers.",
+    "placement": "Located on the landward perimeter of the site away from hazardous process trains and storage tanks, connecting incoming transmission lines to the main utility areas."
+  },
+  "oil_refineries::Switchyard": {
+    "appearance": "A rectangular fenced grid of grey lattice structures and transformers, typically 50 to 150 m across, casting fine lattice shadows. A site typically has one main yard to receive external power, characterized by its intricate, open-air electrical components.",
+    "confusers": "Pipe manifolds and dense processing units also cast complex lattice shadows, but switchyards lack thick pipelines and instead feature thin wires and large boxy transformers.",
+    "placement": "Located on the perimeter or in a dedicated utility area away from the main hazardous processing units, with transmission lines leading outward and power cables feeding into the plant."
+  },
+  "power_plants::Ash Pond": {
+    "appearance": "Typically one or two large basins, 300 to 1500 m across, consisting of grey to black still water or dried grey sediment, enclosed by straight earthen dikes with no internal shadows.",
+    "confusers": "A cooling reservoir contains clear blue or green water rather than opaque grey sediment, while wastewater treatment ponds are much smaller and sit in a row of multiple basins.",
+    "placement": "Situated on land at the outer edge of the site, never in open water, and joined to the main boiler area by a visible slurry pipeline."
+  },
+  "power_plants::Chimney Stack": {
+    "appearance": "Appearing as one to four bright circular dots 15 to 30 m across at the base, these structures are most easily identified by their very long, needle-thin shadows of 100 to 300 m lying across the site and the frequent presence of a visible plume.",
+    "confusers": "Cooling towers also emit plumes but are much wider with shorter, thicker shadows, while transmission towers cast shorter, lattice-patterned shadows and stand in linear networks.",
+    "placement": "Positioned immediately beside the main boiler building or emissions control equipment, it is connected to them by large, visible flue gas ducts."
+  },
+  "iron_still_plant::Chimney Stack": {
+    "appearance": "A bright dot 15 to 30 m across at the base, evidenced by a very long, needle-thin shadow of 100 to 300 m lying across the site, frequently emitting a thick plume. A single site typically features dozens of these scattered across the various processing areas.",
+    "confusers": "Tall silos or gas holders are also round but cast much shorter, thicker shadows, while flare stacks are thinner and may show a flame or heat distortion rather than a thick smoke plume.",
+    "placement": "Located immediately beside blast furnaces, coke oven batteries, sinter plants, or boiler buildings, connected to them by large overhead exhaust ducts."
+  },
+  "oil_refineries::Chimney Stack": {
+    "appearance": "Appears as a bright dot 15 to 30 m across at the base casting a very long, needle-thin shadow of 100 to 300 m, sometimes with a visible exhaust plume; a typical site features dozens of these structures.",
+    "confusers": "Most often mistaken for a distillation column, which casts a much thicker, stepped shadow rather than a needle-thin one, or a flare stack, which is typically isolated at the site perimeter.",
+    "placement": "Situated throughout the active processing areas, immediately beside furnaces, heater blocks, or boiler buildings, and joined to them by large exhaust ducts."
+  },
+  "lng_terminals::Chimney Stack": {
+    "appearance": "A bright circular dot 5 to 20 m across at the base, often appearing in rows of three to six, whose primary evidence is a very long, needle-thin shadow lying across the site, sometimes with a visible exhaust plume.",
+    "confusers": "A flare stack casts a similar long shadow but is typically isolated at the edge of the site and may show a flame, while a tall lighting mast lacks a visible diameter at the base.",
+    "placement": "Located on land immediately beside compressor buildings, vaporizer units, or power generation blocks within the main processing footprint, joined to them by large exhaust ducts."
+  },
+  "power_plants::Cooling Water Reservoir": {
+    "appearance": "Typically appearing as a single, large, unshadowed body of clear blue to green water 300 to 2000 meters across, it features a flat surface and often has engineered, straight edges.",
+    "confusers": "It is most often mistaken for an ash pond, but an ash pond contains grey or black slurry and often features internal berms or dry sections, whereas this holds clear water.",
+    "placement": "It sits on the periphery of the main generation area, connected directly to the condenser building or cooling towers by wide intake and outfall channels or large pipes."
+  },
+  "nuclear_plants::Cooling Water Reservoir": {
+    "appearance": "Typically a single, massive clear water body, 500 to over 3000 m across, appearing flat and blue to green with engineered straight edges and internal baffle dikes. It casts no shadow and is usually the largest single feature on the site.",
+    "confusers": "A natural lake or river has irregular shores and lacks internal engineered baffle dikes, while on-site water treatment basins are vastly smaller and sit in clustered groups.",
+    "placement": "It occupies a massive footprint adjacent to the main generation complex, connected directly to the turbine building condensers via large intake pumphouses and outfall channels."
+  },
+  "oil_refineries::Cooling Water Reservoir": {
+    "appearance": "A large, flat, blue to green water body, typically 100 to 1000 meters across, with straight built edges and no shadows. A site usually has one or two of these clear basins to supply thermal regulation systems.",
+    "confusers": "Wastewater treatment basins are often mistaken for this, but they are typically smaller, darker, and feature surface aerators, skimmers, or visible oil sheens.",
+    "placement": "Located on the periphery of the site, it is connected by large pipes or channels to cooling tower banks or directly to the dense, pipe-heavy processing units."
+  },
+  "iron_still_plant::Cooling Water Reservoir": {
+    "appearance": "A large, flat, unshadowed blue to green water body, typically 100 to 500 meters across, featuring straight built edges and visible intake channels. A site typically has one or two of these large reservoirs to supply the extensive cooling network.",
+    "confusers": "It is most often mistaken for a wastewater treatment basin or a slag quenching pool, but treatment basins are much smaller and clustered with clarifiers, while quenching pools are turbid, steamy, and sit directly beside furnaces.",
+    "placement": "It sits on the periphery of the heavy processing areas, connected by wide channels or large overhead pipelines to the blast furnaces, rolling mills, and cooling tower banks."
+  },
+  "lng_terminals::Cooling Water Reservoir": {
+    "appearance": "A single, large, flat, blue to green water body, typically 100 to 500 meters across with straight, engineered edges and no shadows. It features clear water and visible intake or outfall channels.",
+    "confusers": "It is most often mistaken for a fire water pond, which is significantly smaller and located immediately adjacent to the large storage tanks, or a stormwater basin that often appears muddy or dry.",
+    "placement": "Situated on the perimeter of the site near a natural water source, it is connected by wide channels or large pipes directly to the main processing trains or vaporizer units."
+  },
+  "stp_plants::Circular Clarifier": {
+    "appearance": "A perfect circle of open dark water, 20 to 60 m across, with one thin bright radial arm like a clock hand and a thin concrete rim, flush with the ground so it casts no shadow. They typically appear in symmetrical groups of two to eight.",
+    "confusers": "Anaerobic digesters and sludge storage tanks are also large and circular, but they have solid roofs and cast distinct shadows, whereas this structure contains exposed water.",
+    "placement": "It sits centrally within the facility, directly adjacent and connected to large rectangular aeration basins and sludge processing buildings."
+  },
+  "oil_refineries::Circular Clarifier": {
+    "appearance": "A perfect circle of open dark water, 20 to 60 m across, with one thin bright radial arm like a clock hand and a thin concrete rim, flush with the ground so it casts no shadow. They typically appear in groups of two to four.",
+    "confusers": "Floating roof storage tanks are ubiquitous here but have solid roofs that cast internal shadows and lack the thin radial skimmer arm.",
+    "placement": "Located in the dedicated wastewater treatment area at the edge of the site, clustered alongside rectangular API separators, aeration basins, and small pump houses."
+  },
+  "iron_still_plant::Circular Clarifier": {
+    "appearance": "A perfect circle of open dark water, 20 to 60 m across, featuring a thin bright radial arm and a thin concrete rim flush with the ground so it casts no shadow. They typically appear in groups of two to four.",
+    "confusers": "A storage tank or gas holder has a solid bright roof and casts a distinct shadow, while a mechanical draft cooling tower consists of multiple smaller fan circles rather than a single large pool of water.",
+    "placement": "Situated in the water treatment section of the facility, typically clustered with rectangular settling basins, pump houses, and cooling towers near heavy water-use areas like rolling mills or blast furnaces."
+  },
+  "power_plants::Circular Clarifier": {
+    "appearance": "A perfect circle of open dark water, 20 to 60 m across, with one thin bright radial arm like a clock hand and a thin concrete rim, flush with the ground so it casts no shadow, typically appearing in groups of two to four.",
+    "confusers": "Fuel storage tanks and ash silos have solid roofs and cast distinct shadows, while mechanical draft cooling towers feature multiple smaller fan circles on an elevated deck.",
+    "placement": "Situated in the water treatment or emissions control area, it sits alongside rectangular settling basins and pump houses, connected by piping to the main cooling system or ash handling units."
+  },
+  "stp_plants::Aeration Basin": {
+    "appearance": "A bank of two to eight rectangular or oval concrete basins, 50 to 150 m long, containing dark water with distinct white frothy or churned patches. They have a low profile with no shadow and are typically arranged in parallel rows.",
+    "confusers": "Clarifiers are found on the same site but are distinctly circular with smooth, calm surfaces and radial sweeper arms, whereas these basins are typically rectangular and actively churning.",
+    "placement": "Situated centrally within the processing area, they are linked by open channels directly between the primary and secondary clarifiers and sit adjacent to blower buildings."
+  },
+  "oil_refineries::Aeration Basin": {
+    "appearance": "A site typically features one to three rectangular or oval concrete basins, 30 to 100 m long, containing dark water with distinct white frothy or churned patches. They have a low profile with no shadow, and the surface disturbance from aerators is clearly visible.",
+    "confusers": "An API separator is rectangular but typically covered or features visible skimmer mechanisms without churned water, while a fire water pond is calm and uniformly dark.",
+    "placement": "Located in the dedicated wastewater treatment area at the periphery of the site, it sits downstream of API separators and directly adjacent to circular clarifiers, linked by pipes or channels."
+  },
+  "iron_still_plant::Aeration Basin": {
+    "appearance": "A rectangular or oval concrete basin, 30 to 100 m long, containing dark water with white frothy or churned patches and a low profile with no shadow. They typically appear in groups of two to four.",
+    "confusers": "A settling pond or cooling basin is calm and uniformly dark, while a clarifier is round with a smooth surface and a radial bridge.",
+    "placement": "Located in the dedicated wastewater treatment or by-product recovery area, it sits beside round clarifiers, thickeners, and pump houses, linked by pipe racks and concrete channels."
+  },
+  "stp_plants::Sludge Digester": {
+    "appearance": "A cylindrical tank 15 to 40 m across with a domed or flat roof, appearing grey or metallic and casting a tall solid shadow. They are usually clustered in groups of two to four.",
+    "confusers": "It is most often mistaken for a clarifier, but a clarifier typically contains open water with a visible radial arm whereas a digester has a solid roof and casts a much taller shadow.",
+    "placement": "It is clustered on solid ground beside clarifiers, aeration basins, and sludge dewatering buildings, often linked by visible piping."
+  },
+  "stp_plants::Sludge Drying Bed": {
+    "appearance": "A grid of four to twenty flat rectangular cells, 10 to 50 m each, appearing in varying shades of dark brown, black, or grey depending on moisture content, sitting at ground level with no shadow.",
+    "confusers": "Sand filters and empty aeration basins have uniform light-colored surfaces, whereas these cells display varying dark shades of brown and black across the grid.",
+    "placement": "Located at the perimeter of the site with direct road access for truck loading, typically situated downstream from and adjacent to anaerobic digesters or clarifiers."
+  },
+  "iron_still_plant::Sludge Drying Bed": {
+    "appearance": "A grid of 2 to 8 flat rectangular cells, 10 to 50 m each, containing material in dark brown, rust-red, black, or grey shades that differ from cell to cell. They sit at ground level with no shadow and are bounded by low walls.",
+    "confusers": "Raw material stockpiles of coal or iron ore have irregular shapes, height, and cast shadows, whereas these beds are flat, walled, and strictly rectangular.",
+    "placement": "Located near the site's wastewater treatment area, sitting next to circular clarifiers or thickeners and connected to an access road for heavy trucks."
+  },
+  "oil_refineries::Sludge Drying Bed": {
+    "appearance": "A small cluster of 2 to 6 flat rectangular cells, 10 to 50 m each, containing dark brown or black material that differs in shade or oily sheen from cell to cell. They sit at ground level with no shadow and thick dividing walls.",
+    "confusers": "Secondary containment basins surround large tanks and are typically empty, while API separators have visible skimmer mechanisms and active liquid flow, unlike these static, dark-filled cells.",
+    "placement": "Located on the periphery of the site within the wastewater treatment area, sitting next to API separators, clarifiers, and holding tanks, with wide access roads for vacuum trucks."
+  },
+  "stp_plants::Rectangular Sedimentation Tank": {
+    "appearance": "A bank of two to ten or more long, narrow open-water rectangles, 30 to 100 m by 5 to 15 m, laid side by side like piano keys with thin bright walkways between them. The water appears dark and still, casting no shadow, and often features a thin scraper bridge spanning the width.",
+    "confusers": "Aeration basins share the same rectangular footprint but contain textured, lighter-colored water due to surface bubbling, whereas these tanks hold still, dark water.",
+    "placement": "Located centrally within the site, typically situated immediately downstream of grit chambers and directly adjacent to aeration basins or circular clarifiers."
+  },
+  "iron_still_plant::Rectangular Sedimentation Tank": {
+    "appearance": "A bank of 2 to 4 long narrow open liquid rectangles, 20 to 80 m by 5 to 20 m, laid side by side with thin walkways between them, containing dark or reddish-brown water with no shadow, sometimes spanned by a moving scraper bridge.",
+    "confusers": "Scrap metal pits are dry with irregular, jagged piles of material rather than a flat liquid surface, while building roofs are bright and cast edge shadows.",
+    "placement": "Located near rolling mills, continuous casters, or blast furnaces, often situated alongside circular thickeners and cooling towers to treat heavy industrial process water."
+  },
+  "oil_refineries::Rectangular Sedimentation Tank": {
+    "appearance": "A bank of 2 to 6 long narrow open-liquid rectangles, typically 20 to 80 m by 5 to 10 m, laid side by side like piano keys with thin bright walkways between them, containing dark fluid and casting no internal shadow. Skimmer mechanisms may appear as faint transverse lines across the dark liquid.",
+    "confusers": "Low flat-roofed buildings are bright and cast distinct edge shadows, while dense pipe racks form continuous elevated networks rather than contained dark pools.",
+    "placement": "Located in the wastewater treatment area at the edge of the processing footprint, typically sitting next to circular dissolved air flotation units, aeration basins, and slop oil storage tanks."
+  },
+  "power_plants::Rectangular Sedimentation Tank": {
+    "appearance": "A bank of two to six long narrow open water rectangles, 30 to 100 m by 5 to 15 m, laid side by side like piano keys with thin bright walkways between them, containing dark water and casting no internal shadow.",
+    "confusers": "A low-profile storage building or electrical annex is bright and casts an edge shadow, while solid fuel stockpiles are dry, textured, and cast small shadows.",
+    "placement": "Located on land in the water treatment or scrubber area, often beside circular clarifiers, thickeners, cooling towers, or large ash settling ponds."
+  },
+  "stp_plants::Treatment Train Layout": {
+    "appearance": "A linear or folded sequence of open-topped water basins spanning 200 to 800 meters, progressing from small rectangular chambers to large rectangular aeration basins and ending in circular clarifiers with thin inner shadows. A site typically features one to four parallel trains, visible as a distinct progression of geometric shapes containing dark water and white surface aeration foam.",
+    "confusers": "The main liquid treatment train is most often mistaken for the sludge processing area, but the liquid train consists of open water basins in a strict sequence, whereas sludge processing features closed, cylindrical digester tanks with domed roofs that cast distinct rounded shadows.",
+    "placement": "Forming the central footprint of the site, the layout begins near the influent pump station and headworks, routes through the main basins, and ends at a discharge channel or outfall pipe leading to an adjacent natural water body."
+  },
+  "oil_refineries::Treatment Train Layout": {
+    "appearance": "A single ordered chain of treatment units, typically 100 to 400 m long, progressing from long rectangular separators with dark fluids to aerated basins and circular clarifiers. The sequence features open or grated water basins of varying shapes connected by pipes, contrasting with the solid structures around it.",
+    "confusers": "It is most often mistaken for a small tank farm or a cooling tower bank, but the train is distinguished by its linear sequence of open-topped, liquid-filled basins of mixed shapes rather than uniform roofed cylinders or fan grids.",
+    "placement": "It sits at the perimeter or lowest elevation of the site, connected by pipe racks to the central processing units and ending at a discharge channel or outfall."
+  },
+  "iron_still_plant::Treatment Train Layout": {
+    "appearance": "An ordered sequence of open rectangular settling basins and large circular clarifiers 20 to 60 m wide containing dark or rust-colored water, spanning 100 to 400 m in total length. A site typically has one to three of these trains, characterized by thin shadows cast by scraper bridges on the circular tanks and visible connecting channels.",
+    "confusers": "It is most often mistaken for raw water storage or cooling tower basins, but the treatment train is distinguished by its sequential flow from rectangular pits to circular clarifiers and the presence of dark, turbid, or oily water.",
+    "placement": "Positioned along the site perimeter near a river or outfall, it is connected via pipes and trenches directly to heavy water-use areas like rolling mills, blast furnaces, or coke ovens."
+  },
+  "power_plants::Treatment Train Layout": {
+    "appearance": "A compact, ordered sequence of open-topped water basins, typically 50 to 200 m long, transitioning from small rectangular settling tanks to circular clarifiers casting thin shadows from radial arms. A site typically has one such train, appearing as a cluster of dark or turbid water-filled geometric shapes connected by surface pipes.",
+    "confusers": "A chemical tank farm consists of roofed cylinders casting solid shadows within containment dikes, whereas the treatment train is a sequence of flat, open water basins of varying shapes.",
+    "placement": "Situated on the site periphery, it is typically located between the main generation block or ash ponds and the final discharge channel or adjacent water body."
+  },
+  "stp_plants::Chlorination Contact Basin": {
+    "appearance": "A rectangular concrete basin, typically 10 to 50 m long, containing dark water divided into a serpentine channel by thin walls that show as a zig-zag pattern at the surface. A site usually features one or two of these basins.",
+    "confusers": "It is most often mistaken for a sedimentation tank, which features parallel straight cells rather than a serpentine zig-zag channel, or an aeration basin, which shows visible surface froth.",
+    "placement": "Positioned at the very end of the treatment train, it sits next to the final clarifiers and connects directly to the outfall."
+  },
+  "oil_refineries::Chlorination Contact Basin": {
+    "appearance": "A single or paired rectangular concrete basin, 10 to 50 m long, containing dark water divided into a serpentine channel by thin walls that show as a zig-zag at the surface.",
+    "confusers": "API separators are often mistaken for them but feature parallel straight channels with oil sheen or covers rather than a zig-zag pattern, while aeration basins show surface froth.",
+    "placement": "Located on land at the very end of the wastewater treatment train, sitting next to final clarifiers or holding ponds and connected directly to the outfall."
+  },
+  "iron_still_plant::Chlorination Contact Basin": {
+    "appearance": "Typically a single rectangular concrete basin, 10 to 50 m long, containing dark water divided into a serpentine channel by thin walls that cast faint linear shadows and show as a zig-zag at the surface.",
+    "confusers": "An API oil-water separator or scale pit has parallel straight cells and skimming mechanisms, whereas this basin features a continuous serpentine zig-zag channel.",
+    "placement": "Located at the end of the wastewater treatment train, downstream from large circular clarifiers or thickeners, and positioned near the final outfall."
+  },
+  "power_plants::Chlorination Contact Basin": {
+    "appearance": "A single or pair of rectangular concrete basins, 10 to 50 m long, containing dark water divided into a serpentine channel by thin baffle walls that cast narrow shadows and show as a zig-zag pattern at the surface.",
+    "confusers": "A runoff sedimentation basin has parallel straight cells and often contains dark sludge, whereas this basin features a distinct serpentine zig-zag pattern.",
+    "placement": "It sits on land at the end of the water treatment train, located next to final clarifiers, cooling towers, or the main outfall discharging into a nearby water body."
+  },
+  "oil_refineries::Distillation Column": {
+    "appearance": "A small bright circle 5 to 10 m across, recognisable by a very long thin shadow of 30 to 80 m, standing in clusters of two to five similar columns among dense piping. They appear at a glance as the tallest central nodes of the processing units, casting the longest shadows in the dense infrastructure.",
+    "confusers": "A furnace chimney stack casts a similarly long shadow but stands directly attached to a boxy or cylindrical heater, whereas a flare stack is isolated at the plant edge in a cleared safety zone.",
+    "placement": "Located in the heart of the core process area, tightly surrounded by and connected to dense pipe racks, banks of heat exchangers, and accumulator vessels."
+  },
+  "lng_terminals::Distillation Column": {
+    "appearance": "A small bright circle 5 to 10 m across, recognisable primarily by a very long, thin shadow of 30 to 80 m. They typically stand in a small group of two to five similar columns among dense piping within each process train.",
+    "confusers": "A chimney stack stands alone next to a power generator or boiler; a flare stack is isolated at the plant edge in a cleared zone; a main cryogenic heat exchanger is significantly wider with a thicker shadow.",
+    "placement": "Located centrally within the main process trains, connected to dense pipe racks and sitting adjacent to banks of air coolers and large cryogenic heat exchangers."
+  },
+  "iron_still_plant::Distillation Column": {
+    "appearance": "A small bright or metallic circle 2 to 8 m across, recognizable by a very long, thin shadow of 20 to 60 m, standing in a small group of two to six columns among dense piping.",
+    "confusers": "A chimney stack stands alone near a furnace or boiler and casts an even taller shadow, while blast furnace stoves are much wider and clustered directly against the main furnace.",
+    "placement": "Located in the chemical by-product area near the coke ovens, surrounded by pipe racks, small storage tanks, and heat exchangers, away from the main smelting operations."
+  },
+  "oil_refineries::Crude Oil Storage Tank": {
+    "appearance": "A large white or grey circle 30 to 100 m across with a flat or floating roof, casting a thin crescent shadow. It is usually one of dozens clustered together inside earthen dikes.",
+    "confusers": "A clarifier is open dark water with a radial arm, while refined product tanks are typically smaller and lack the internal rim shadow of a floating roof.",
+    "placement": "Grouped in large diked tank farms on the perimeter of the site, connected by extensive pipe racks to the central processing units."
+  },
+  "oil_refineries::LPG Sphere": {
+    "appearance": "A bright reflective circle 10 to 30 m across whose shadow is a round crescent showing a ball shape, typically clustered in groups of four to twelve within a containment area.",
+    "confusers": "Dome-roofed storage tanks are the most common confusers on this site, but they cast low-curved shadows rather than the deep, round crescent shadow of a suspended sphere.",
+    "placement": "Grouped together in a dedicated tank farm area, surrounded by containment berms, and connected via dense pipe racks to the main processing units and loading racks."
+  },
+  "lng_terminals::LPG Sphere": {
+    "appearance": "A bright reflective circle 10 to 30 m across whose shadow is a round crescent showing a ball shape, typically appearing in a row or cluster of two to six.",
+    "confusers": "Main cryogenic storage tanks are vastly larger with low domes, while flat-roofed utility tanks cast thin straight-edged shadows rather than a spherical crescent.",
+    "placement": "Sits in a cleared yard connected by pipe racks to fractionation units and processing trains, located distinctly apart from the massive main storage tanks."
+  },
+  "oil_refineries::Tank Farm": {
+    "appearance": "A massive cluster of dozens to hundreds of white circular tanks, 10 to 100 m in diameter, arranged in grids within earthen or concrete containment dikes. They cast thin crescent shadows or show inner ring shadows from floating roofs, with complex pipe racks running between the rows.",
+    "confusers": "Water treatment clarifiers contain open dark water with radial arms, and pressurized gas storage spheres cast distinct rounded shadows rather than flat crescents.",
+    "placement": "Occupying large dedicated zones often on the perimeter of the site, they are linked by thick pipe racks directly to central processing units and loading terminals."
+  },
+  "lng_terminals::Tank Farm": {
+    "appearance": "A cluster of two to six massive, white, circular tanks with flat or domed roofs, typically 50 to 100 meters in diameter. They cast prominent crescent shadows due to their extreme height and are spaced widely apart, often without traditional earthen dikes.",
+    "confusers": "Standard petroleum storage tanks may appear similar, but they are significantly smaller, cast shorter shadows, and often feature visible floating roofs.",
+    "placement": "Set back from the water but linked directly to the marine loading jetty and process trains by thick, straight pipe racks."
+  },
+  "power_plants::Tank Farm": {
+    "appearance": "A cluster of three to ten solid circular tanks, 15 to 80 m in diameter, surrounded by containment dikes. They appear as white or dark flat-topped cylinders casting thin crescent shadows, arranged in rows with pipe racks between them.",
+    "confusers": "Fly ash silos are narrower, cast much longer shadows, and stand close to the boiler, while water clarifiers have open dark water and radial arms rather than solid roofs.",
+    "placement": "Located on the perimeter of the site within containment berms, linked by above-ground pipe racks to the main boiler building and fuel delivery infrastructure like a jetty or rail spur."
+  },
+  "iron_still_plant::Tank Farm": {
+    "appearance": "A cluster of three to ten circular tanks, typically 10 to 50 m in diameter, often appearing gray or soot-stained rather than pristine white, casting thin crescent shadows. They are arranged in small groups or rows, sometimes surrounded by low earthen or concrete containment dikes.",
+    "confusers": "Large gas holders are much larger and usually stand alone with visible exterior frameworks, while water clarifiers contain dark liquid and feature radial arms.",
+    "placement": "Situated near the coke by-product area, power station, or rolling mills, connected to these processing units by networks of overhead pipe racks."
+  },
+  "oil_refineries::Flare Stack": {
+    "appearance": "Typically appearing in groups of one to three, this thin tower is 1 to 5 m wide and 30 to 100 m tall, seen as a dot with a long narrow shadow standing alone in a cleared circle, sometimes with a flame or dark plume at the tip.",
+    "confusers": "It is most often mistaken for a furnace or boiler chimney stack, but a chimney stands immediately adjacent to processing units or buildings rather than isolated in a wide safety zone.",
+    "placement": "It sits at the far perimeter of the site in a large, empty safety zone, connected back to the main processing units by a single, long, above-ground pipe."
+  },
+  "lng_terminals::Flare Stack": {
+    "appearance": "A thin tower 1 to 5 m wide and 50 to 100 m tall, appearing as a dot casting a long, narrow shadow, typically found alone or in pairs within a large cleared circle. It may show a clean flame or heat shimmer at the tip, lacking the dark smoke plumes seen at other industrial sites.",
+    "confusers": "Lightning protection masts around the storage tanks cast similar long shadows, but they lack the large connecting pipe and the dedicated, cleared safety radius.",
+    "placement": "Positioned at the far edge of the site, well away from the large insulated storage tanks and process trains, sitting in an empty safety zone reached by a single long pipe."
+  },
+  "iron_still_plant::Flare Stack": {
+    "appearance": "A thin tower 1 to 5 m wide and 30 to 100 m tall, seen as a dot casting a long narrow shadow, often with a visible flame or dark plume at the tip. A site typically has one to three of these standing alone in cleared circular safety zones.",
+    "confusers": "A chimney stack is thicker and stands directly against a boiler building or coke oven battery rather than in an isolated safety zone.",
+    "placement": "It sits in an empty safety zone at the edge of the site or near the coke ovens and blast furnaces, reached by a long overhead gas pipeline."
+  },
+  "stp_plants::Flare Stack": {
+    "appearance": "A thin, metallic or white vertical pipe or small cylindrical tower typically 1 to 2 m wide and 5 to 15 m tall, casting a distinct linear shadow, with usually only one or two present on site. It stands in a small cleared area and may occasionally show a small flame or heat distortion at the tip.",
+    "confusers": "It is most often mistaken for a tall lighting pole or a small silo, but lighting poles lack connecting ground pipes and silos are significantly wider with no heat signature.",
+    "placement": "It sits in a small safety zone near the large, cylindrical anaerobic digester tanks or gas storage domes, connected to them by a visible run of above-ground piping."
+  },
+  "oil_refineries::Process Unit Piping": {
+    "appearance": "A dense maze of thin grey lines with frequent right angles, covering 100 to 300 m per process block, packed between columns, exchangers and small vessels, casting intricate lattice shadows. A typical site features several of these highly congested blocks.",
+    "confusers": "A main pipe rack is the most common confuser, but it consists of long, straight, parallel lines acting as transit corridors, whereas process piping forms a tangled, multi-directional web.",
+    "placement": "Located centrally within the active processing area, tightly woven around distillation columns and reactors, connecting these active components to the main pipe racks that lead to the tank farm."
+  },
+  "lng_terminals::Process Unit Piping": {
+    "appearance": "A dense maze of thin grey lines with frequent right angles, covering 100 to 300 m per processing train, packed between compressors, heat exchangers, and small vessels, casting complex lattice shadows.",
+    "confusers": "A pipe rack is a set of long, straight parallel lines connecting distant areas, whereas this is a dense, localized tangle; a catwalk is a single narrow line on a structure.",
+    "placement": "On land within the main processing trains, situated between the gas treatment units, the cooling structures, and the large cryogenic storage tanks."
+  },
+  "iron_still_plant::Process Unit Piping": {
+    "appearance": "A dense network of elevated, thick and thin grey or rust-colored lines with frequent right angles, covering 50 to 200 meters, casting complex lattice shadows. A site typically has one or two major clusters of this piping, packed tightly around gas cleaning or by-product recovery vessels.",
+    "confusers": "A conveyor belt is a single, continuous, wider band that changes direction at distinct transfer towers, whereas piping forms branching, multi-layered networks with sharp right angles.",
+    "placement": "Located within the gas processing or by-product recovery areas, sitting directly adjacent to coke ovens, blast furnaces, or gas holders, and connecting them to boilers or flare stacks."
+  },
+  "power_plants::Process Unit Piping": {
+    "appearance": "A dense network of thick, often insulated grey or silver lines with frequent right angles, spanning 50 to 200 m. A site typically features one main complex web of these elevated pipes casting distinct linear shadows, packed tightly around boilers and turbines.",
+    "confusers": "A conveyor is a wider, single enclosed band that often slopes upward, while a catwalk is a single narrow line attached to a building exterior.",
+    "placement": "Located centrally within the main generation area, connecting the boiler house, turbine hall, and cooling infrastructure."
+  },
+  "lng_terminals::Marine Loading Jetty": {
+    "appearance": "A long, light grey trestle extending 100 to over 1000 m into the water, terminating in a T- or L-shaped loading platform flanked by smaller mooring dolphins connected by thin catwalks. Sites typically feature one to three of these structures, casting distinct shadows on the water and often hosting a large tanker moored alongside.",
+    "confusers": "It is most often mistaken for a materials offloading facility or seawater intake structure, but is distinguished by its long pipe trestle, central loading platform, and isolated mooring dolphins.",
+    "placement": "Extending from the shoreline into deep open water, it is connected directly to the large onshore domed storage tanks by a continuous, highly visible pipe rack."
+  },
+  "oil_refineries::Marine Loading Jetty": {
+    "appearance": "A narrow, often T-shaped or L-shaped pier 100 to 500 m long extending into the water, featuring a light grey deck with visible pipe manifolds and casting a distinct shadow. A site typically has one to four of these structures, frequently with large liquid bulk tankers moored alongside.",
+    "confusers": "It is most often mistaken for a cooling water intake or outfall structure, but the loading jetty is much larger and features berthing dolphins, loading arms, and moored ships.",
+    "placement": "It extends from the shoreline into deep navigable water and is directly connected to the onshore tank farm by a continuous, elevated pipe rack."
+  },
+  "nuclear_plants::Reactor Containment Dome": {
+    "appearance": "A smooth white or grey circular structure 40 to 60 m across with a soft rounded shadow and no roof fittings. Sites typically have between one and six of these domes, depending on the number of generating units.",
+    "confusers": "It is most often mistaken for a large water storage tank, but tanks typically have flat roofs with visible seams or edge railings rather than a smooth, seamless dome.",
+    "placement": "It sits centrally within the main generation block, directly attached to the long rectangular turbine hall, and is located near cooling towers or a water intake and a high-voltage switchyard."
+  },
+  "nuclear_plants::Reactor-Turbine Block Pair": {
+    "appearance": "Typically appearing in sets of one to six, this structure consists of a tall concrete dome or cylinder joined directly to a long rectangular hall, measuring 150 to 300 meters combined. They are usually light grey, casting a distinct paired shadow of one rounded and one long straight shape, with no tall chimney stacks attached.",
+    "confusers": "It is most often mistaken for a large on-site warehouse or auxiliary building, but those standard rectangular structures lack the distinct, heavily shielded dome or cylinder attached to one end.",
+    "placement": "Positioned centrally on the site, it sits directly between the cooling water intake or cooling towers and the high-voltage electrical switchyard."
+  },
+  "nuclear_plants::Nuclear Site Layout": {
+    "appearance": "A compact complex 800 to 2000 m across consisting of one to four light-coloured concrete domes casting rounded shadows, each joined to a long rectangular hall. The site includes large cooling towers or a water intake, a switchyard, and a wide empty fenced margin.",
+    "confusers": "A coal plant shows tall smokestacks and a black coal yard, a refinery shows tank farms and a column forest, and a desalination plant lacks the characteristic containment domes.",
+    "placement": "Situated on land directly beside a sea, lake, or river to provide cooling water, with a high-voltage switchyard and transmission corridor extending outward from the main halls."
+  },
+  "nuclear_plants::Nuclear Cooling Intake Structure": {
+    "appearance": "Typically one or two massive, light-grey concrete rectangular blocks 50 to 200 meters long situated at the water edge. They cast a blocky shadow over a dredged forebay and often feature visible pump bays along the water line.",
+    "confusers": "It is most often mistaken for a cooling water discharge structure or a heavy equipment dock, but the intake lacks turbulent water plumes and features a distinct forebay rather than mooring space.",
+    "placement": "Situated directly on the shoreline or at the end of an intake canal, it is connected via large underground pipes directly to the turbine building."
+  },
+  "power_plants::Nuclear Cooling Intake Structure": {
+    "appearance": "A large, grey, rectangular concrete block 30 to 150 m long situated at the water edge, casting a distinct blocky shadow over a dredged forebay or channel. A site typically features one or two of these massive structures to draw in cooling water.",
+    "confusers": "A bulk fuel unloading dock extends further into the water and features conveyors or moored ships, whereas this structure is a solid block flush with or slightly recessed into the shoreline.",
+    "placement": "Situated on the shoreline and partly in the water, it is connected by large underground pipes or an open canal directly to the main turbine hall."
+  },
+  "lng_terminals::LNG Storage Tank": {
+    "appearance": "A very large white circle 50 to 90 m across with a flat or gently domed top and a broad shadow, usually two to six identical tanks in a row.",
+    "confusers": "Condensate or refrigerant tanks on the site are significantly smaller and often spherical or horizontally cylindrical, rather than massive flat or domed circles.",
+    "placement": "On land on the shoreline, never in open water, between a liquefaction or regasification train and a long carrier berth, joined by a straight pipe rack."
+  },
+  "lng_terminals::Liquefaction Train": {
+    "appearance": "A long rectangular block of dense grey machinery and piping, 300 to 600 meters long, casting jagged shadows from large boxy heat exchangers. They typically appear in parallel sets of one to six trains.",
+    "confusers": "It is most often mistaken for gas pretreatment units on the same site, but those are generally smaller and lack the massive main cryogenic heat exchangers.",
+    "placement": "It sits centrally on the site between the gas pretreatment area and the massive domed storage tanks, connected to the tanks and the marine loading jetty by heavy pipe racks."
+  },
+  "lng_terminals::LNG Carrier Berth": {
+    "appearance": "Typically numbering one to three per site, this very long, light grey pier extends 300 to 500 m into deep water, casting sharp shadows over the water from its elevated central loading platform and mooring dolphins.",
+    "confusers": "It is most often mistaken for a secondary condensate or service jetty found on the same site, but is distinguished by its massive length and the large loading arms on its central platform.",
+    "placement": "Extending from the shoreline into open water, it is connected directly to the massive onshore storage tanks via a long trestle carrying a prominent pipe rack."
+  },
+  "lng_terminals::Cryogenic Pipe Rack": {
+    "appearance": "A site typically features one to three bright white, straight elevated lines 200 to 1000 m long and 10 to 30 m wide, casting thin parallel shadows. The bright white insulation makes them stand out sharply against the ground at a glance.",
+    "confusers": "Standard pipe racks are grey and weave tightly through process units rather than running in long straight lines, while access roads sit at ground level and lack an elevated shadow.",
+    "placement": "Running on land or extending along a marine trestle, these connect the large circular storage tanks, the process trains, and the carrier berth."
+  },
+  "oil_refineries::Cryogenic Pipe Rack": {
+    "appearance": "A straight or gently turning elevated line 50 to 500 m long and 5 to 15 m wide, appearing bright white due to heavy insulation and casting a thin parallel shadow. A site typically has only one or two of these specialized runs, standing out against the darker surrounding infrastructure.",
+    "confusers": "Standard pipe racks are far more numerous, weave extensively between all process units, and appear grey or metallic rather than bright white.",
+    "placement": "It runs above ground connecting specialized refrigerated storage tanks, such as spheres or double-walled tanks, to specific gas processing units or marine loading berths."
+  },
+  "lng_terminals::Regasification Unit": {
+    "appearance": "A single large, rectangular grid of grey or white exchangers and manifolds 100 to 300 m across, casting jagged shadows. It appears as a dense, complex maze of piping situated next to the large storage tanks.",
+    "confusers": "It is most often mistaken for a substation, which has lattice towers and transmission lines, or a cooling tower bank, which features distinct fan circles on its roof.",
+    "placement": "Located on land between the main storage tanks and the outgoing gas pipeline, connected to both via thick pipe racks."
+  },
+  "iron_still_plant::Blast Furnace": {
+    "appearance": "A tall, dark, complex tower 20 to 40 meters across casting a very long shadow, typically appearing in groups of one to five. It is surrounded by a row of cylindrical hot blast stoves, an inclined conveyor climbing to its top, and a large cast house at its base.",
+    "confusers": "A gas storage tank has a much shorter shadow and lacks adjacent stoves, while a basic oxygen furnace is enclosed within a massive rectangular building rather than standing as an exposed tower.",
+    "placement": "Centrally located between the raw material yards and the steelmaking buildings, fed by inclined conveyors and connected to the rest of the site by heavy rail lines."
+  },
+  "iron_still_plant::Coke Oven Battery": {
+    "appearance": "A long, narrow, heavily soot-stained black block 200 to 400 m long and 15 to 25 m wide, casting a tall shadow from a quench tower often emitting steam at one end. A site typically has one to four of these batteries arranged in parallel.",
+    "confusers": "It is most often mistaken for a long warehouse or rolling mill building, but those are wider, brighter, and lack the heavy black soot staining and adjacent steam-emitting quench towers.",
+    "placement": "It sits between the coal storage yard and the blast furnaces, connected to both by a network of narrow conveyor galleries and rail lines."
+  },
+  "iron_still_plant::Rolling Mill": {
+    "appearance": "Typically one to three per site, this is a very long rectangular hall, 300 to 800 m by 50 to 100 m, featuring a grey metal roof casting a long, straight shadow. An analyst will see rail lines entering the building and large open yards stacked with finished coils, plates, or bars beside it.",
+    "confusers": "It is most often mistaken for a large storage warehouse or the continuous casting building, but the rolling mill is significantly longer and is uniquely flanked by open yards stacked with finished steel products rather than raw materials.",
+    "placement": "Located at the downstream end of the production flow, it sits adjacent to the continuous casting building and is heavily connected to outbound rail yards for product shipping."
+  },
+  "iron_still_plant::Iron Ore Stockpile": {
+    "appearance": "Rust-red ridges or cones 200 to 600 m long arranged in parallel rows in an open yard, casting soft sloped shadows. A typical site has two to six distinct piles flanked by linear stacker-reclaimer rails.",
+    "confusers": "Coal stockpiles are black rather than rust-red, while slag heaps are grey, irregularly terraced, and lack neat linear stacker-reclaimer tracks.",
+    "placement": "Located in the raw materials handling yard, these stockpiles are connected by a network of conveyors directly to the sinter plant and blast furnaces."
+  },
+  "iron_still_plant::Slag Dump": {
+    "appearance": "Typically appearing as one or two massive grey to dark brown terraced mounds 200 to 1000 meters across, they feature hard dumping edges and rugged, uneven shadows.",
+    "confusers": "Coal or coke piles are black and conveyor-fed, and iron ore stockpiles are reddish and neatly stacked by reclaimers, whereas these mounds are irregularly dumped and lack conveyor infrastructure.",
+    "placement": "Located on the perimeter of the site, they are connected directly to the blast furnaces or melt shops by wide, heavy-duty haul roads or specialized rail lines."
+  },
+  "iron_still_plant::Gas Holder": {
+    "appearance": "A massive, tall cylinder 30 to 80 meters across, typically grey or rusty, casting a very long shadow and often surrounded by an external lattice guide frame. A site typically has one to three of these towering structures to store byproduct gases.",
+    "confusers": "It is most often mistaken for a large water or fuel storage tank, but is significantly taller with a longer shadow, often features an external lattice, and lacks a surrounding containment dike.",
+    "placement": "It sits slightly apart from the main processing units, connected directly to blast furnaces, coke ovens, or on-site power stations by large, elevated pipelines."
+  },
+  "stp_plants::Gas Holder": {
+    "appearance": "A cylindrical or dome-shaped structure 10 to 30 m across, often white, green, or grey, casting a distinct shadow and typically appearing singularly or in pairs.",
+    "confusers": "It is most often mistaken for an anaerobic digester, but a digester typically has a flat roof with central mixing equipment, whereas this structure is a smooth dome or a cylinder with a lattice guide frame.",
+    "placement": "It sits on land adjacent to the anaerobic digesters, connected to them by large pipes to store the generated biogas."
+  },
+  "oil_refineries::Gas Holder": {
+    "appearance": "A large cylindrical structure 30 to 70 m across, typically grey or rusty, casting a tall shadow and often surrounded by a lattice guide frame. A site typically has only one or two of these structures.",
+    "confusers": "Standard liquid storage tanks are usually white, lack the surrounding lattice frame, and are clustered in diked farms, while pressurized gas spheres are distinctly round rather than cylindrical.",
+    "placement": "It sits apart from the main liquid tank farms, usually located near flare stacks, gas recovery units, or utility plants, and is connected to them by large overhead pipes."
+  },
+  "iron_still_plant::Sinter Plant": {
+    "appearance": "A long rectangular structure 200 to 400 m long heavily coated in rust-red dust, casting long shadows from its tall exhaust stacks. A site typically has one or two of these, identifiable by an attached round or straight open cooling bed.",
+    "confusers": "It is most often mistaken for a coke oven battery, but a coke battery is stained black with coal dust and has a quench tower, whereas this structure is rust-red with an open cooling bed.",
+    "placement": "It sits between the raw material ore yards and the blast furnaces, connected to both by a network of elevated covered conveyors."
+  },
+  "iron_still_plant::Continuous Casting Building": {
+    "appearance": "A large hall 150 to 300 m long with a distinct stepped roofline featuring a tall casting tower at one end that drops to a lower run-out bay, typically casting a tall shadow from its grey metal roof. A site typically has one to three of these structures depending on its production capacity.",
+    "confusers": "A rolling mill is much longer with a uniform flat roof, while a furnace building is taller overall and features prominent exhaust stacks.",
+    "placement": "It is centrally located, directly connected to the melt shop at its tall end and leading into a slab yard or rolling mill at its lower end."
+  },
+  "iron_still_plant::Scrap Metal Yard": {
+    "appearance": "Typically one or two irregular areas 100 to 400 m across consisting of jagged, multicoloured piles in rust, grey, and metallic tones, casting uneven shadows and often featuring overhead cranes.",
+    "confusers": "Ore, coal, and slag stockpiles are uniform in colour and smooth in texture, whereas these piles are highly textured, multicoloured, and jagged.",
+    "placement": "Located adjacent to the melt shop and directly connected to a rail spur or heavy haul road for unloading materials."
+  },
+  "iron_still_plant::Railway Siding": {
+    "appearance": "Several parallel tracks 500 to 2000 m long that fan out from a main line, appearing as dark grey or rust-colored bands often stained by bulk materials, with gentle curves and long rows of rectangular railcars. A typical site features multiple extensive siding networks to handle high volumes of raw materials and finished products.",
+    "confusers": "Internal haul roads are wider grey bands with irregularly spaced trucks rather than linked railcars, while conveyor belts are single, elevated lines casting distinct shadows that run directly into process buildings.",
+    "placement": "Located alongside massive open-air stockpiles of coal and ore or adjacent to long rolling mill buildings, connecting the facility's heavy loading areas to the regional rail network."
+  },
+  "power_plants::Railway Siding": {
+    "appearance": "A facility typically has one large continuous loop or a set of three to ten parallel tracks 1000 to 3000 m long. They appear as flat, dark grey or black bands stained by fuel dust, lacking tall shadows but often filled with long rows of rectangular railcars.",
+    "confusers": "A conveyor is a single elevated band casting a distinct shadow that runs directly into boiler buildings or crushers, whereas these are ground-level parallel lines holding discrete rectangular cars.",
+    "placement": "Located on the perimeter of the site adjacent to large open fuel stockpiles or unloading sheds, connecting the storage yard to the regional rail line."
+  },
+  "oil_refineries::Railway Siding": {
+    "appearance": "Several parallel tracks 500 to 2000 m long that fan out from a main line, appearing as dark grey lines with gentle curves. They typically contain rows of pill-shaped, cylindrical tank cars and often flank a narrow, linear loading rack.",
+    "confusers": "Pipe racks are often mistaken for these, but pipe racks are elevated, make sharp right-angle turns between process units, and lack discrete cylindrical cars.",
+    "placement": "Situated on the perimeter of the site adjacent to large cylindrical storage tank farms and loading gantries, joining the regional rail line."
+  },
+  "lng_terminals::Railway Siding": {
+    "appearance": "Several parallel tracks 200 to 1000 m long that fan out from a main line, appearing as dark grey lines with gentle curves, often occupied by rows of bright, cylindrical tank cars. A site typically has one or two sets of these sidings for bulk loading.",
+    "confusers": "Pipe racks are also long, parallel linear features, but they are elevated with distinct shadows and connect directly to process units, whereas sidings are flat on the ground and contain discrete tank cars.",
+    "placement": "Situated on the landward perimeter of the site, connecting to a regional rail network and running alongside specialized loading racks and large insulated storage tanks."
+  },
+  "nuclear_plants::Railway Siding": {
+    "appearance": "One to three parallel tracks, typically 100 to 500 m long, appearing as thin dark grey lines with gentle curves. They are much smaller than typical freight yards and may occasionally hold specialized rectangular railcars or heavy-duty flatcars.",
+    "confusers": "Heavy haul access roads are wider grey bands that lack distinct parallel rails, while pipe racks are elevated, cast distinct shadows, and run between process units.",
+    "placement": "Joining the regional rail line, it enters the site and typically terminates near the turbine building, transformer yard, or spent fuel handling facilities."
+  },
+  "oil_refineries::Pipe Rack": {
+    "appearance": "A complex, intersecting network of dozens of straight elevated corridors 10 to 40 m wide and hundreds of metres long, appearing as several thin parallel grey lines with regular support columns and thin parallel shadows.",
+    "confusers": "Internal access roads are single, wider solid bands that may contain vehicles, while elevated walkways are much narrower and lack the multiple parallel striations of pipes.",
+    "placement": "Forming the central grid of the site, they run orthogonally to connect process units, flare stacks, tank farms, and product loading terminals."
+  },
+  "lng_terminals::Pipe Rack": {
+    "appearance": "Several thin parallel grey or white lines on a straight elevated corridor 10 to 40 m wide and hundreds of metres long, often featuring distinct U-shaped expansion loops. A site typically has a few major racks forming a central spine with regular support columns and thin parallel shadows.",
+    "confusers": "An access road is a single wider, flat band often with vehicles and no expansion loops, while a marine trestle carries similar pipes but extends over open water.",
+    "placement": "Located on land forming the main arteries of the site, directly linking the massive domed storage tanks, the dense rectangular process trains, and the root of the marine loading jetty."
+  },
+  "iron_still_plant::Pipe Rack": {
+    "appearance": "Several thin parallel grey or rust-colored lines on a straight elevated corridor 10 to 40 m wide and hundreds of metres long, with regular support columns and thin parallel shadows. A typical site features a vast, interconnected network of these racks spanning the entire complex.",
+    "confusers": "A conveyor is a single solid band often starting at a bulk material stockpile or sinter plant, whereas this structure consists of multiple distinct parallel lines.",
+    "placement": "Runs extensively throughout the site, linking coke ovens, blast furnaces, gas holders, and on-site power plants."
+  },
+  "power_plants::Pipe Rack": {
+    "appearance": "Several thin parallel grey or highly reflective lines on a straight elevated corridor 10 to 40 m wide and tens to hundreds of metres long, with regular support columns and thin parallel shadows. A site typically has a few of these networks routing steam and water between major buildings.",
+    "confusers": "A conveyor is a single enclosed band often sloping upward from a fuel stockpile or crusher, whereas this structure consists of multiple distinct parallel lines.",
+    "placement": "Elevated across the site, it links the main boiler and turbine halls to cooling towers, water treatment units, and sometimes fuel storage tanks."
+  },
+  "nuclear_plants::Pipe Rack": {
+    "appearance": "Several thin parallel grey lines on a straight elevated corridor 5 to 20 m wide and tens to a few hundred metres long, with regular support columns and thin parallel shadows. A site typically has a few of these connecting auxiliary and cooling structures.",
+    "confusers": "Covered walkways or security corridors are similar elevated linear structures, but they have a solid, uniform roof rather than the distinct parallel striations of individual pipes.",
+    "placement": "Located on land between major structures, typically linking the turbine hall, auxiliary buildings, cooling infrastructure, and waste processing facilities."
+  },
+  "stp_plants::Pipe Rack": {
+    "appearance": "A narrow elevated corridor, typically 2 to 10 meters wide and tens of meters long, carrying a few thin parallel grey lines and casting a shadow with regular support columns. A site typically has only one or two of these, as most piping is underground.",
+    "confusers": "Most often mistaken for elevated pedestrian walkways between basins, but walkways appear as a single solid band rather than multiple distinct parallel lines.",
+    "placement": "Located between anaerobic digesters, sludge processing buildings, and aeration basins, often bridging over internal roads or water channels."
+  },
+  "nuclear_plants::Chimney Stack": {
+    "appearance": "A bright dot 10 to 20 m across at the base, whose evidence is a very long needle-thin shadow of 100 to 200 m lying across the site, with typically one or two present per reactor unit. These ventilation stacks rarely show a visible plume.",
+    "confusers": "A meteorological mast or transmission tower casts a lattice-patterned shadow rather than a solid one, while a natural draft cooling tower is vastly wider with a massive shadow.",
+    "placement": "Situated on land immediately beside or directly atop the reactor or auxiliary buildings, connected to them by large ventilation ducts."
+  },
+  "power_plants::Marine Loading Jetty": {
+    "appearance": "A narrow pier 50 to 500 m long reaching from the shore into water, often appearing dark grey from fuel dust, with a distinct shadow on the water and typically one or two present per site. It frequently features bulky unloader cranes on the deck and a large bulk carrier ship moored alongside.",
+    "confusers": "Cooling water intake or outfall structures also extend into the water but lack ship berthing, unloader cranes, and conveyor belts.",
+    "placement": "Extends from the shoreline into open water, connected directly to the onshore open-air fuel stockpiles or storage tanks by a long, elevated conveyor or pipe rack."
+  },
+  "iron_still_plant::Marine Loading Jetty": {
+    "appearance": "A heavy-duty, light grey pier 100 to 500 m long extending into deep water, casting a distinct shadow and often featuring large gantry unloaders or conveyor galleries on its deck. Coastal sites typically have one to three of these structures, frequently with large bulk carrier ships moored alongside.",
+    "confusers": "Cooling water intake or outfall piers extend into the water but lack large ship unloaders, conveyor galleries, and moored bulk carriers.",
+    "placement": "Extending from the shoreline into navigable water, it is directly connected to onshore raw material stockpiles by long, elevated conveyor belt galleries."
+  }
+}
